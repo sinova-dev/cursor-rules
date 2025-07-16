@@ -79,7 +79,7 @@
   - Implement proper CI/CD practices
   - Use proper code quality tools
   - Follow proper documentation practices
-- Use descriptive variable names with auxiliary verbs (e.g., isLoading).
-- Use lowercase with dashes for directories (e.g., components/auth-wizard).
-- Favor named exports for components.
-- Use the Receive an Object, Return an Object (RORO) pattern.
+  - Use descriptive variable names with auxiliary verbs (e.g., isLoading).
+  - Use lowercase with dashes for directories (e.g., components/auth-wizard).
+  - Favor named exports for components.
+  - Use the Receive an Object, Return an Object (RORO) pattern.

@@ -89,7 +89,7 @@
   - Follow proper testing practices
   - Use proper documentation tools
   - Implement proper CI/CD practices
-- File structure: Exported component, subcomponents, helpers, static content, types.
-- Avoid unnecessary curly braces in conditional statements.
-- For single-line statements in conditionals, omit curly braces.
-- Use concise, one-line syntax for simple conditional statements (e.g., if (condition) doSomething()).
+  - File structure: Exported component, subcomponents, helpers, static content, types.
+  - Avoid unnecessary curly braces in conditional statements.
+  - For single-line statements in conditionals, omit curly braces.
+  - Use concise, one-line syntax for simple conditional statements (e.g., if (condition) doSomething()).

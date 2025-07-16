@@ -96,7 +96,7 @@
   - Implement proper error handling
   - Follow proper code review
   - Use proper version control
-- Use Zod for form validation.
-- Wrap client components in Suspense with fallback.
-- Use dynamic loading for non-critical components.
-- Optimize images: WebP format, size data, lazy loading.
+  - Use Zod for form validation.
+  - Wrap client components in Suspense with fallback.
+  - Use dynamic loading for non-critical components.
+  - Optimize images: WebP format, size data, lazy loading.
