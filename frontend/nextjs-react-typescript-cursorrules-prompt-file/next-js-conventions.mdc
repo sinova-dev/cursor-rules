@@ -1,0 +1,121 @@
+- Server Components (RSC):
+
+  - Use Server Components by default
+  - Keep client components minimal and focused
+  - Use 'use client' only when necessary:
+    - Interactive UI elements
+    - Browser API access
+    - Client-side state management
+  - Implement proper component boundaries
+  - Use proper data fetching patterns
+  - Follow proper caching strategies
+  - Leverage streaming and suspense
+  - Use Next.js 15's enhanced partial prerendering
+  - Leverage server-only packages with 'server-only' import
+  - Use proper component composition patterns
+  - Pass Server Components as children to Client Components
+  - Keep layouts as Server Components
+  - Use dynamic imports for Client Components
+
+- Performance Optimization:
+
+  - Prioritize Core Web Vitals:
+    - Largest Contentful Paint (LCP)
+    - First Input Delay (FID)
+    - Cumulative Layout Shift (CLS)
+    - Interaction to Next Paint (INP)
+  - Implement proper image optimization
+  - Use proper font loading strategies
+  - Implement proper code splitting
+  - Use proper resource preloading
+  - Follow proper caching patterns
+  - Monitor performance metrics
+  - Use Next.js 15's partial prerendering
+  - Leverage static exports with dynamic features
+  - Use Next.js 15's enhanced static optimization
+
+- Routing and Navigation:
+
+  - Use App Router for modern routing
+  - Implement proper dynamic routes
+  - Use proper loading states
+  - Implement proper error handling
+  - Use proper parallel routes
+  - Follow proper navigation patterns
+  - Use proper route groups
+
+- Data Fetching:
+
+  - Use Server Components for data fetching
+  - Implement proper caching strategies:
+    - Use { cache: 'force-cache' } for static data
+    - Use { cache: 'no-store' } for dynamic data
+    - Use { next: { revalidate: n } } for ISR
+  - Use proper revalidation patterns
+  - Follow proper error handling
+  - Use proper loading states
+  - Implement proper optimistic updates
+  - Use proper mutation patterns
+  - Leverage Next.js 15's enhanced data fetching
+  - Use server actions for mutations
+  - Implement proper cache revalidation
+  - Use Suspense for streaming data
+
+- State Management:
+
+  - Keep state close to where it's used
+  - Use Server Components for shared state
+  - Keep client state minimal
+  - Use proper form handling with Server Actions
+  - Implement proper cache invalidation
+  - Use proper context boundaries
+  - Follow proper state persistence
+  - Use proper state synchronization
+  - Wrap context providers in Client Components
+  - Use custom hooks for context access
+
+- Security:
+
+  - Implement proper authentication
+  - Use proper authorization
+  - Follow proper CORS policies
+  - Implement proper CSP
+  - Use proper input validation
+  - Follow proper security headers
+  - Implement proper error handling
+
+- SEO and Metadata:
+
+  - Use proper metadata API
+  - Implement proper dynamic metadata
+  - Use proper OpenGraph tags
+  - Follow proper sitemap generation
+  - Use proper robots.txt
+  - Implement proper structured data
+  - Follow proper canonical URLs
+
+- Development Practices:
+
+  - Use proper TypeScript configuration
+  - Follow proper testing patterns
+  - Use proper environment variables
+  - Implement proper logging
+  - Use proper debugging tools
+  - Follow proper documentation
+  - Use proper deployment strategies
+  - Leverage Next.js 15's enhanced dev tools
+  - Use Turbopack in development
+  - Follow Next.js 15's best practices
+
+- Accessibility:
+  - Follow WCAG guidelines
+  - Use proper ARIA attributes
+  - Implement proper keyboard navigation
+  - Use proper focus management
+  - Follow proper color contrast
+  - Use proper semantic HTML
+  - Implement proper screen reader support
+  - Prefer server components and Next.js SSR features.
+  - Use 'use client' only for Web API access in small components.
+  - Avoid using 'use client' for data fetching or state management.
+  - Refer to Next.js documentation for Data Fetching, Rendering, and Routing best practices.

@@ -1,0 +1,112 @@
+- Server Action Implementation:
+
+  - Use built-in Next.js 15 server actions
+  - Define server actions with 'use server' directive
+  - Place 'use server' at file level for module-wide actions
+  - Place 'use server' inside function for component-level actions
+  - Implement proper input validation with Zod
+  - Follow proper error handling patterns
+  - Use proper TypeScript types
+  - Implement proper security measures
+  - Follow proper performance patterns
+  - Use proper logging and monitoring
+  - Pass server actions as props to Client Components
+  - Use formAction for form submissions
+
+- Error Handling:
+
+  - Model expected errors as return values
+  - Use error boundaries for unexpected errors
+  - Implement proper error logging
+  - Use proper error types
+  - Follow proper error recovery
+  - Implement proper fallback UI
+  - Use proper error messages
+  - Handle errors gracefully in Client Components
+  - Use try/catch only for unexpected errors
+  - Return structured error responses
+
+- Form Handling:
+
+  - Use Next.js 15's built-in form actions
+  - Use useFormState and useFormStatus hooks
+  - Implement proper form validation
+  - Use proper loading states
+  - Follow proper accessibility
+  - Implement proper error feedback
+  - Use proper success feedback
+  - Follow proper UX patterns
+  - Leverage Next.js 15's built-in form components
+  - Use Server Actions for form submissions
+
+- Type Safety:
+
+  - Use proper TypeScript types for actions
+  - Implement proper input validation
+  - Use proper type inference
+  - Follow proper type exports
+  - Use proper type guards
+  - Implement proper type checking
+  - Use proper type documentation
+  - Type server actions properly
+  - Use interfaces for action parameters
+  - Type action responses properly
+
+- Security:
+
+  - Implement proper input sanitization
+  - Use proper CSRF protection
+  - Follow proper authentication
+  - Use proper authorization
+  - Implement proper rate limiting
+  - Follow proper security headers
+  - Use proper validation patterns
+  - Validate data on the server
+  - Use cookies securely
+  - Implement proper security checks
+
+- Performance:
+
+  - Use proper caching strategies
+  - Use Next.js 15's built-in optimistic updates
+  - Follow proper revalidation patterns
+  - Use proper loading states
+  - Implement proper error recovery
+  - Use proper streaming patterns
+  - Follow proper performance monitoring
+  - Leverage Next.js 15's enhanced caching
+  - Use server-only validation
+  - Implement proper optimistic UI
+
+- Code Organization:
+
+  - Keep actions in services directory
+  - Follow proper file structure
+  - Use proper naming conventions
+  - Implement proper separation
+  - Follow proper module boundaries
+  - Use proper dependency management
+  - Implement proper documentation
+
+- Testing:
+
+  - Write comprehensive unit tests
+  - Implement proper integration tests
+  - Use proper mocking strategies
+  - Follow proper test coverage
+  - Use proper test utilities
+  - Implement proper test fixtures
+  - Follow proper testing patterns
+
+- Monitoring and Debugging:
+  - Implement proper logging
+  - Use proper error tracking
+  - Follow proper monitoring
+  - Use proper debugging tools
+  - Implement proper metrics
+  - Use proper analytics
+  - Follow proper observability
+  - Handle errors gracefully and return appropriate responses.
+  - Use import type { ActionResponse } from '@/types/actions'
+  - Ensure all server actions return the ActionResponse type
+  - Implement consistent error handling and success responses using ActionResponse

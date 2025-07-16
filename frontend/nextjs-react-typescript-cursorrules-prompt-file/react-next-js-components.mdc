@@ -1,0 +1,102 @@
+- Component Architecture:
+
+  - Use functional components with TypeScript
+  - Follow single responsibility principle
+  - Keep components small and focused
+  - Use proper component composition
+  - Implement proper prop typing
+  - Follow proper file structure
+  - Use proper naming conventions
+
+- Server Components:
+
+  - Use Server Components by default
+  - Keep client components minimal
+  - Use proper component boundaries
+  - Implement proper data fetching
+  - Follow proper caching patterns
+  - Use proper streaming strategies
+  - Leverage proper suspense
+
+- Client Components:
+
+  - Use 'use client' only when necessary
+  - Keep client-side state minimal
+  - Use proper hooks patterns
+  - Implement proper event handling
+  - Follow proper lifecycle management
+  - Use proper error boundaries
+  - Implement proper loading states
+
+- UI Components:
+
+  - Use Shadcn UI and Radix UI
+  - Follow proper accessibility (a11y)
+  - Use proper Tailwind patterns
+  - Implement proper responsive design
+  - Use proper animation patterns
+  - Follow proper theming
+  - Use proper component variants
+
+- Performance:
+
+  - Use proper code splitting
+  - Implement proper lazy loading
+  - Use proper memoization
+  - Follow proper rendering optimization
+  - Use proper bundle optimization
+  - Implement proper caching
+  - Use proper resource loading
+
+- Forms and Validation:
+
+  - Use Zod for form validation
+  - Implement proper form handling
+  - Use proper error messages
+  - Follow proper accessibility
+  - Use proper loading states
+  - Implement proper validation
+  - Use proper success feedback
+
+- State Management:
+
+  - Keep state close to usage
+  - Use proper context boundaries
+  - Implement proper state updates
+  - Follow proper state persistence
+  - Use proper state synchronization
+  - Implement proper error states
+  - Use proper loading states
+
+- Component Organization:
+
+  - Follow feature-based structure
+  - Use proper module boundaries
+  - Implement proper separation
+  - Follow proper import ordering
+  - Use proper type organization
+  - Implement proper documentation
+  - Use proper testing patterns
+
+- Image Optimization:
+
+  - Use Next.js Image component
+  - Implement proper lazy loading
+  - Use proper image formats
+  - Follow proper sizing patterns
+  - Use proper placeholder images
+  - Implement proper caching
+  - Use proper CDN integration
+
+- Development Practices:
+  - Write comprehensive tests
+  - Use proper TypeScript features
+  - Follow proper documentation
+  - Use proper debugging tools
+  - Implement proper error handling
+  - Follow proper code review
+  - Use proper version control
+- Use Zod for form validation.
+- Wrap client components in Suspense with fallback.
+- Use dynamic loading for non-critical components.
+- Optimize images: WebP format, size data, lazy loading.
