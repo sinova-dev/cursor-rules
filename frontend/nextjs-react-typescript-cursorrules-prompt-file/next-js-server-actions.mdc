@@ -2,29 +2,30 @@
 
 ## Code Organization
 
-    - Directory structure:
-        - Place in /app/actions/ directory for global actions
-        - Use feature-specific locations for feature-scoped actions
-        - Use kebab-case for files
-        - Use descriptive names with feature prefixes
+    - Structure directories:
+        - Place actions in /app/actions/
+        - Create feature-specific locations
+        - Use kebab-case naming
+        - Write descriptive names
+        - Follow feature prefixes
         - Example: user-management.action.ts
 
-    - File organization:
+    - Organize files:
         - Group imports logically:
-          1. External dependencies
-          2. Type imports
-          3. Internal utilities
-          4. Local types/interfaces
-        - No relative imports
-        - Maximum 3 parameters per action
+          1. Import external dependencies
+          2. Import types
+          3. Import internal utilities
+          4. Import local types
+        - Avoid relative imports
+        - Limit to 3 parameters per action
 
 ## Implementation
 
-    - Action definition:
-        - Use 'use server' directive at file level
-        - Export as named exports
-        - Type-safe parameters with 'T' prefix
-        - Use async/await for all async operations
+    - Define actions:
+        - Add 'use server' directive
+        - Export named functions
+        - Type parameters with 'T'
+        - Use async/await patterns
         - Example:
           'use server'
 
@@ -42,114 +43,107 @@
             // implementation
           };
 
-    - Function style:
-        - Use arrow functions for consistency
-        - Implement early returns for error cases
-        - Use proper type guards for type narrowing
-        - Use optional chaining and nullish coalescing
-        - Keep functions pure and focused
+    - Write functions:
+        - Use arrow functions
+        - Return early for errors
+        - Implement type guards
+        - Apply optional chaining
+        - Keep functions pure
 
 ## Type Safety and Error Handling
 
-    - Type safety:
-        - Use proper error type definitions
-        - Type-safe parameters and responses
-        - Type-safe forms with Zod
-        - Type-safe server state
-        - Use proper type guards
+    - Implement type safety:
+        - Define error types
+        - Type parameters and responses
+        - Create type-safe forms
+        - Build type-safe state
+        - Use type guards
 
-    - Error handling:
-        - Implement error recovery strategies
-        - Use structured error logging
-        - Handle validation errors
-        - Provide error reporting
-        - Use error boundaries where appropriate
+    - Handle errors:
+        - Implement recovery strategies
+        - Structure error logs
+        - Validate inputs
+        - Report errors
+        - Create error boundaries
 
 ## Server Action Patterns
 
-    - Form handling:
-        - Use formAction prop
-        - Type-safe forms with Zod
-        - Server-side validation
-        - Loading states with useFormStatus
+    - Handle forms:
+        - Configure formAction prop
+        - Validate forms with Zod
+        - Verify server-side
+        - Manage loading states
 
+    - Process mutations:
+        - Implement optimistic updates
+        - Manage cache revalidation
+        - Handle error recovery
+        - Type check responses
 
-    - Data mutations:
-        - Optimistic updates
-        - Cache revalidation
-        - Error recovery
-        - Type-safe responses
-
-
-    - State management:
+    - Control state:
         - Use useFormState hook
-        - Type-safe server state
-        - Proper error states
-        - Loading indicators
+        - Type check server state
+        - Handle error states
+        - Show loading indicators
 
 ## Security
 
-    - Input validation:
-        - Zod validation
-        - Type checking
-        - Sanitization
-        - Rate limiting
+    - Validate input:
+        - Implement Zod validation
+        - Check types thoroughly
+        - Sanitize data
+        - Control rate limits
 
+    - Secure authentication:
+        - Type check sessions
+        - Verify roles
+        - Validate permissions
+        - Handle auth errors
 
-    - Authentication:
-        - Type-safe session
-        - Role checking
-        - Permission validation
-        - Error handling
-
-
-    - Data safety:
-        - SQL injection prevention
-        - XSS prevention
-        - CSRF protection
-        - Input sanitization
+    - Protect data:
+        - Prevent SQL injection
+        - Block XSS attacks
+        - Enable CSRF protection
+        - Sanitize inputs
 
 ## Performance
 
-    - Caching:
-        - Proper cache headers
-        - Revalidation
-        - Cache invalidation
-        - Edge caching
+    - Configure caching:
+        - Set cache headers
+        - Manage revalidation
+        - Control invalidation
+        - Enable edge caching
 
-
-    - Optimization:
-        - Minimal client state
-        - Proper loading states
-        - Optimistic updates
-        - Response streaming
+    - Optimize performance:
+        - Minimize client state
+        - Handle loading states
+        - Update optimistically
+        - Stream responses
 
 ## Testing
 
-    - Unit tests:
-        - Action testing
-        - Type testing
-        - Error testing
-        - Integration tests
+    - Create tests:
+        - Write action tests
+        - Verify types
+        - Test error cases
+        - Build integration tests
 
-
-    - Test organization:
-        - Test file naming: *.test.ts
-        - Test structure
-        - Mock data
-        - Error cases
+    - Structure tests:
+        - Name files properly
+        - Organize test structure
+        - Create mock data
+        - Test error scenarios
 
 ## Monitoring
 
-    - Error tracking:
-        - Structured logging
-        - Error reporting
-        - Performance monitoring
-        - Usage analytics
+    - Track errors:
+        - Structure logging
+        - Report errors
+        - Monitor performance
+        - Analyze usage
 
-
-    - Debugging:
-        - Development tools
-        - Error tracing
-        - Performance profiling
-        - Log analysis
+    - Debug code:
+        - Use development tools
+        - Trace errors
+        - Profile performance
+        - Analyze logs

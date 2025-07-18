@@ -3,36 +3,36 @@
 ## Component Architecture
 
     - Define components using arrow functions:
-        - Always use arrow function syntax (required by 'react/function-component-definition')
-        - Example: const MyComponent = ({ prop }: TProps) => { ... }
-        - Export as named exports (import/no-default-export rule)
+        - Write components using arrow function syntax
+        - Export components as named exports
+        - Follow the example: const MyComponent = ({ prop }: TProps) => { ... }
+        - Avoid using function declarations
 
     - Apply TypeScript naming conventions:
         - Prefix type aliases with 'T' (e.g., TProps)
         - Prefix interfaces with 'I' (e.g., IProps)
-        - Start boolean props with prefixes:
-          is, should, has, can, was, did, will, use, with, disable
-        - Use union types and discriminated unions for better type safety
-        - Leverage generics for reusable type-safe code
+        - Start boolean props with verbs (is, should, has, can, was, did)
+        - Implement union types for better type safety
+        - Create reusable code with generics
 
-    - Maintain small and focused components:
-        - Limit JSX depth to 5 levels (react/jsx-max-depth)
-        - Restrict parameters to 3 (max-params)
-        - Create one component per file (react/no-multi-comp)
-        - Write prop types documentation
-        - Document shared components
+    - Maintain component focus:
+        - Limit JSX depth to 5 levels
+        - Restrict parameters to 3
+        - Create separate files for each component
+        - Write documentation for prop types
+        - Document all shared components
 
-    - Follow file and folder naming:
-        - Name component files (.tsx) in PascalCase (e.g., Button.tsx, UserProfile.tsx)
-        - Write other files (.ts, .js) in kebab-case
-        - Apply Next.js app router conventions for special files:
-          layout, page, error, loading, etc.
+    - Structure files and folders:
+        - Name component files in PascalCase (e.g., Button.tsx)
+        - Write utility files in kebab-case
+        - Follow Next.js app router conventions
+        - Organize by feature/domain
 
-    - Handle props properly:
+    - Handle props effectively:
         - Sort props with reserved props first
-        - Start event handler props with 'on'
-        - Implement default arguments for function props
-        - Example:
+        - Prefix event handlers with 'on'
+        - Implement default arguments
+        - Follow the example:
           const Button = ({
             children,
             className,
@@ -40,163 +40,117 @@
             isDisabled = false
           }: TProps) => { ... }
 
-    - Structure imports correctly:
-        - Avoid relative imports (use absolute paths)
-        - Use inline type imports with 'type' keyword for better tree-shaking
-        - Example:
-          import type { type ComponentProps } from 'react'
-          import { Button } from '@/components/ui'
-
-    - Structure components properly:
-        - Define props using type (not interface)
-        - Export components as named exports
-        - Example:
-          type TButtonProps = {
-            onClick: () => void;
-            isDisabled?: boolean;
-          }
-
-          export const Button = ({
-            onClick,
-            isDisabled = false
-          }: TButtonProps) => { ... }
+    - Organize code structure:
+        - Place types at the top of file
+        - Order components logically:
+          1. Define types and interfaces
+          2. Export main component
+          3. Write subcomponents
+          4. Implement helper functions
+          5. Define static content
+        - Apply modern patterns:
+          - Use optional chaining
+          - Implement nullish coalescing
+          - Apply array/object spread
+          - Write clean destructuring
 
 ## Client Components
 
-    - Implement 'use client' only when necessary:
+    - Implement client features:
+        - Add 'use client' when needed
         - Build interactive UI elements
         - Access Browser APIs
-        - Handle events
-        - Manage client-side state
+        - Handle user events
+        - Manage client state
 
-    - Minimize client-side state
+    - Optimize performance:
+        - Minimize client-side state
+        - Implement proper hooks
+        - Handle events efficiently
+        - Manage component lifecycle
 
-    - Implement proper hooks patterns
-
-    - Handle events properly
-
-    - Manage component lifecycle
-
-    - Implement error boundaries
-
-    - Handle loading states
+    - Handle errors:
+        - Implement error boundaries
+        - Create loading states
+        - Provide fallback UI
 
 ## UI Components
 
-    - Implement Shadcn UI and Radix UI
-
-    - Ensure accessibility (a11y)
-
-    - Apply Tailwind patterns
-
-    - Build responsive designs
-
-    - Implement animations thoughtfully
-
-    - Configure theming
-
-    - Create component variants
+    - Build UI components:
+        - Integrate Shadcn UI and Radix UI
+        - Ensure accessibility (a11y)
+        - Apply Tailwind patterns
+        - Create responsive designs
+        - Implement animations thoughtfully
+        - Configure theming
+        - Design component variants
 
 ## Performance
 
-    - Split code effectively
-
-    - Implement lazy loading
-
-    - Apply memoization
-
-    - Optimize rendering
-
-    - Optimize bundles
-
-    - Implement caching
-
-    - Load resources efficiently
+    - Optimize code:
+        - Split code strategically
+        - Implement lazy loading
+        - Apply memoization
+        - Enhance rendering
+        - Minimize bundles
+        - Configure caching
+        - Load resources efficiently
 
 ## Forms and Validation
 
-    - Implement Zod validation
-
-    - Handle form submissions
-
-    - Display error messages
-
-    - Ensure accessibility
-
-    - Show loading states
-
-    - Validate inputs
-
-    - Provide success feedback
+    - Build forms:
+        - Implement Zod validation
+        - Handle form submissions
+        - Display error messages
+        - Ensure accessibility
+        - Show loading states
+        - Validate inputs
+        - Provide success feedback
 
 ## State Management
 
-    - Keep state close to usage
-
-    - Define context boundaries
-
-    - Update state immutably
-
-    - Persist state when needed
-
-    - Synchronize state properly
-
-    - Handle error states
-
-    - Manage loading states
+    - Manage state:
+        - Keep state close to usage
+        - Define context boundaries
+        - Update state immutably
+        - Persist state when needed
+        - Synchronize state properly
+        - Handle error states
+        - Control loading states
 
 ## Component Organization
 
-    - Structure by features
-
-    - Define module boundaries
-
-    - Separate concerns properly
-
-    - Order imports logically
-
-    - Organize types effectively
-
-    - Write documentation
-
-    - Create test patterns
+    - Organize components:
+        - Structure by features
+        - Define module boundaries
+        - Separate concerns properly
+        - Order imports logically
+        - Organize types effectively
+        - Write documentation
+        - Create test patterns
 
 ## Image Optimization
 
-    - Use Next Image component
-
-    - Implement lazy loading
-
-    - Choose proper formats
-
-    - Define correct sizes
-
-    - Add placeholder images
-
-    - Configure caching
-
-    - Set up CDN integration
+    - Optimize images:
+        - Use Next Image component
+        - Implement lazy loading
+        - Choose proper formats
+        - Define correct sizes
+        - Add placeholder images
+        - Configure caching
+        - Set up CDN integration
 
 ## Development Practices
 
-    - Write comprehensive tests
-
-    - Use TypeScript features
-
-    - Document code thoroughly
-
-    - Debug effectively
-
-    - Handle errors properly
-
-    - Review code systematically
-
-    - Control versions properly
-
-    - Use Zod for form validation.
-
-    - Wrap client components in Suspense with fallback.
-
-    - Use dynamic loading for non-critical components.
-
-    - Optimize images: WebP format, size data, lazy loading.
+    - Implement practices:
+        - Write comprehensive tests
+        - Use TypeScript features
+        - Document code thoroughly
+        - Debug effectively
+        - Handle errors properly
+        - Review code systematically
+        - Control versions properly
+        - Configure Zod validation
+        - Wrap Suspense components
+        - Load components dynamically
+        - Optimize image formats

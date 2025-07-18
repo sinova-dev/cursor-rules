@@ -2,217 +2,219 @@
 
 ## File Structure and Naming
 
-    - Follow Next.js App Router conventions:
-        - layout.tsx: Must use default export
-        - page.tsx: Must use default export
-        - error.tsx: Must use default export
-        - loading.tsx: Must use default export
-        - not-found.tsx: Must use default export
-        - template.tsx: Must use default export
-        - route.ts: Must use default export
+    - Structure files:
+        - Export default from layout.tsx
+        - Export default from page.tsx
+        - Export default from error.tsx
+        - Export default from loading.tsx
+        - Export default from not-found.tsx
+        - Export default from template.tsx
+        - Export default from route.ts
 
-    - File naming conventions:
-        - Component files: MUST use PascalCase (e.g., Button.tsx, UserProfile.tsx, AuthLayout.tsx)
-        - Utility files (.ts): kebab-case
-        - Config files: kebab-case
-        - Test files: kebab-case.test.ts
-        - Story files: camelCase.stories.tsx
+    - Name files:
+        - Write components in PascalCase
+        - Create utilities in kebab-case
+        - Name configs in kebab-case
+        - Format tests as kebab-case.test.ts
+        - Write stories as camelCase.stories.tsx
 
-    - Folder naming:
-        - Follow Next.js app router case
-        - Use kebab-case for feature folders
-        - Group by feature/domain
+    - Organize folders:
+        - Follow app router case
+        - Use kebab-case for features
+        - Group by domain
 
 ## Server Components (RSC)
 
-    - Use Server Components by default:
-        - Keep client components minimal
-        - Maximum JSX depth: 5 levels
-        - Maximum props: 3
-        - No relative imports
+    - Build Server Components:
+        - Use RSC by default
+        - Minimize client code
+        - Limit JSX to 5 levels
+        - Restrict props to 3
+        - Avoid relative imports
 
-    - Client Component boundaries:
-        - Mark with 'use client'
-        - Keep interactive logic isolated
-        - Handle client-side state locally
-        - Follow proper event handling
+    - Create Client boundaries:
+        - Add 'use client' directive
+        - Isolate interactive logic
+        - Manage client state locally
+        - Handle events properly
 
-    - Data fetching patterns:
-        - Use Server Components for data fetching
+    - Fetch data:
+        - Use Server Components
         - Handle errors with error.tsx
-        - Implement proper loading states
-        - Use proper TypeScript types
+        - Implement loading states
+        - Type check responses
 
-    - Component composition:
-        - Pass Server Components as children
-        - Keep layouts as Server Components
-        - Use dynamic imports for Client Components
-        - Follow proper prop typing
+    - Compose components:
+        - Pass RSC as children
+        - Keep layouts server-side
+        - Load clients dynamically
+        - Type check props
 
 ## Performance Optimization
 
-    - Core Web Vitals optimization:
-        - Largest Contentful Paint (LCP)
-        - First Input Delay (FID)
-        - Cumulative Layout Shift (CLS)
-        - Interaction to Next Paint (INP)
+    - Optimize Core Vitals:
+        - Improve LCP loading
+        - Minimize FID delay
+        - Reduce CLS shifts
+        - Enhance INP response
 
-    - Image optimization:
-        - Use Next.js Image component
-        - Proper sizing and formats
-        - Loading strategies
-        - Proper alt text
+    - Optimize images:
+        - Use Next.js Image
+        - Set proper sizes
+        - Choose formats wisely
+        - Add alt text
 
-    - Resource optimization:
-        - Proper code splitting
-        - Bundle optimization
-        - Font loading
-        - Asset preloading
+    - Optimize resources:
+        - Split code effectively
+        - Minimize bundles
+        - Load fonts efficiently
+        - Preload assets
 
-    - Caching strategies:
-        - Static data caching
-        - Dynamic data handling
-        - Revalidation patterns
-        - Cache invalidation
+    - Configure caching:
+        - Cache static data
+        - Handle dynamic data
+        - Manage revalidation
+        - Control invalidation
 
 ## Routing and Navigation
 
-    - App Router implementation:
-        - Proper route segmentation
-        - Dynamic route handling
-        - Route groups usage
-        - Parallel routes
+    - Implement routes:
+        - Segment routes properly
+        - Handle dynamic paths
+        - Create route groups
+        - Enable parallel routes
 
-    - Navigation patterns:
-        - Type-safe navigation
-        - Proper loading states
-        - Error boundary usage
-        - Proper TypeScript types
+    - Build navigation:
+        - Type check navigation
+        - Show loading states
+        - Handle errors
+        - Type check paths
 
 ## Data Fetching
 
-    - Server Component patterns:
-        - Use { cache: 'force-cache' } for static
-        - Use { cache: 'no-store' } for dynamic
-        - Use { next: { revalidate: n } } for ISR
-        - Proper error handling
+    - Configure caching:
+        - Set force-cache for static
+        - Use no-store for dynamic
+        - Configure ISR timing
+        - Handle errors properly
 
-    - Mutation patterns:
+    - Process mutations:
         - Use Server Actions
-        - Proper validation
-        - Error handling
-        - Optimistic updates
+        - Validate inputs
+        - Handle errors
+        - Update optimistically
 
-    - Type safety:
-        - Use Zod for validation
-        - Proper TypeScript types
-        - Error type definitions
-        - Response type safety
+    - Ensure type safety:
+        - Validate with Zod
+        - Type check responses
+        - Define error types
+        - Secure responses
 
 ## State Management
 
-    - Server-side state:
-        - Keep in Server Components
-        - Proper type definitions
-        - Error handling
-        - Cache management
+    - Manage server state:
+        - Keep data server-side
+        - Type check definitions
+        - Handle errors
+        - Control caching
 
-    - Client-side state:
-        - Minimal client state
-        - Proper React hooks
-        - Type-safe context
-        - Proper event handling
+    - Control client state:
+        - Minimize state usage
+        - Implement hooks properly
+        - Type check context
+        - Handle events
 
 ## Security
 
-    - Authentication:
-        - Proper auth patterns
-        - Type-safe session
-        - Error handling
-        - Proper validation
+    - Secure authentication:
+        - Implement auth patterns
+        - Type check sessions
+        - Handle errors
+        - Validate inputs
 
-    - Authorization:
-        - Role-based access
-        - Type-safe checks
-        - Error handling
-        - Proper validation
+    - Control authorization:
+        - Check roles properly
+        - Type check access
+        - Handle errors
+        - Validate permissions
 
-    - Input validation:
+    - Validate input:
         - Use Zod schemas
-        - Server-side validation
-        - Type safety
-        - Error handling
+        - Verify server-side
+        - Ensure type safety
+        - Handle errors
 
 ## SEO and Metadata
 
-    - Metadata implementation:
-        - Type-safe metadata
-        - Dynamic generation
-        - Proper validation
-        - Error handling
+    - Configure metadata:
+        - Type check metadata
+        - Generate dynamically
+        - Validate content
+        - Handle errors
 
-    - SEO optimization:
-        - Proper meta tags
-        - Structured data
-        - Type safety
-        - Validation
-
-## Development Tools and Practices
-
-    - Code quality and style:
-        - Use ESLint for code linting with strict rules
-        - Use Prettier for consistent code formatting
-        - Use single quotes for strings
-        - Use template literals for string interpolation
-        - Follow consistent spacing and indentation
-        - Use early returns for guard clauses
-        - Avoid unnecessary else statements
-        - Use concise syntax for simple conditionals
-
-    - Development workflow:
-        - Use proper version control practices
-        - Follow code review guidelines
-        - Follow proper debugging practices
-        - Use proper CI/CD tools
-
-    - Testing:
-        - Implement comprehensive testing
-        - Component testing
-        - Integration testing
-        - Type testing
-        - Error testing
-
-    - Documentation:
-        - Component documentation
-        - Type documentation
-        - API documentation
-        - Error documentation
-        - Maintain up-to-date docs
-
-## TypeScript Configuration
-
-    - Enable strict mode
-    - Use proper type imports
-    - Follow type safety rules
-    - Implement proper validation
-    - Use Zod for schema validation
-    - Use type-safe patterns across:
-        - Navigation
-        - State management
-        - API responses
-        - Form handling
-        - Authentication/Authorization
+    - Optimize SEO:
+        - Add meta tags
+        - Structure data
+        - Ensure type safety
+        - Validate content
 
 ## Accessibility
 
-    - WCAG compliance:
-        - Proper ARIA usage
-        - Keyboard navigation
-        - Screen reader support
-        - Color contrast
+    - Implement WCAG:
+        - Add ARIA attributes
+        - Enable keyboard nav
+        - Support screen readers
+        - Check color contrast
 
-    - Implementation:
-        - Semantic HTML
-        - Focus management
-        - Error messaging
-        - Loading states
+    - Build features:
+        - Use semantic HTML
+        - Manage focus states
+        - Display error messages
+        - Show loading states
+
+## Development Tools and Practices
+
+    - Enforce code quality:
+        - Configure ESLint with strict rules
+        - Set up Prettier formatting
+        - Use single quotes
+        - Apply template literals
+        - Maintain consistent spacing
+        - Return early from functions
+        - Remove unnecessary else
+        - Write concise conditionals
+
+    - Implement workflow:
+        - Follow version control practices
+        - Review code systematically
+        - Debug code effectively
+        - Set up CI/CD pipelines
+
+    - Write tests:
+        - Create component tests
+        - Build integration tests
+        - Test types thoroughly
+        - Validate error handling
+
+    - Document code:
+        - Write component docs
+        - Document types
+        - Describe APIs
+        - Explain error handling
+        - Update docs regularly
+
+## TypeScript Configuration
+
+    - Configure TypeScript:
+        - Enable strict mode
+        - Import types properly
+        - Follow safety rules
+        - Validate inputs
+
+    - Implement type safety:
+        - Use Zod for validation
+        - Type check navigation
+        - Secure state management
+        - Validate API responses
+        - Type check forms
+        - Verify auth flows
