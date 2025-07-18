@@ -1,53 +1,94 @@
-- Error Handling Best Practices:
+# Error Handling and Validation
 
-  - Handle errors and edge cases at the beginning of functions using guard clauses
-  - Use early returns for error conditions to avoid deeply nested if statements
-  - Place the happy path last in the function for improved readability
-  - Avoid unnecessary else statements; use if-return pattern instead
-  - Implement proper error logging with structured data for debugging
-  - Use custom error types with meaningful names and messages
-  - Provide user-friendly error messages in the UI layer
+## TypeScript Error Handling
 
-- Server-Side Error Handling:
+    - Error type definitions:
+        - Use 'T' prefix for type names
+        - Create specific error types per domain
+        - Use proper type inference
+        - Document error types thoroughly
+        - Use proper error type exports
 
-  - Use next-safe-action for type-safe server actions with Zod validation
-  - Model expected errors as return values in Server Actions
-  - Implement error boundaries using error.tsx and global-error.tsx
-  - Use the Error component from next/error for 404 and 500 errors
-  - Implement proper error logging with context for server-side errors
+    - Use discriminated unions for error types:
+        - Define specific error types for different cases
+        - Use type guards for error checking
+        - Example:
+          type TApiError =
+            | { type: 'network'; status: number }
+            | { type: 'validation'; errors: TZodError }
+            | { type: 'auth'; message: string }
 
-- Client-Side Error Handling:
+    - Function error handling:
+        - Use early returns for error conditions
+        - Implement proper type guards
+        - Use optional chaining for nullable values
+        - Handle async errors with try-catch
+        - Return Result types for expected errors
 
-  - Use React Error Boundary components for catching rendering errors
-  - Implement fallback UI components for error states
-  - Use try-catch blocks only for unexpected runtime errors
-  - Handle async errors with proper loading and error states
-  - Use React.Suspense for handling loading states
+## Server-Side Error Handling
 
-- Form Validation:
+    - Use next-safe-action for type-safe server actions with Zod validation
 
-  - Use Zod for type-safe form validation
-  - Implement client-side validation before submission
-  - Use server-side validation as a security measure
-  - Provide immediate feedback for validation errors
-  - Use proper ARIA attributes for accessibility
-  - Handle all form submission edge cases
+    - Model expected errors as return values in Server Actions
 
-- API Error Handling:
+    - Implement error boundaries using error.tsx and global-error.tsx
 
-  - Use proper HTTP status codes for different error types
-  - Implement consistent error response format
-  - Handle network errors and timeouts gracefully
-  - Provide retry mechanisms for transient failures
-  - Log API errors with relevant context for debugging
+    - Use the Error component from next/error for 404 and 500 errors
 
-- Error Monitoring and Reporting:
-  - Implement proper error tracking and monitoring
-  - Use structured logging for better error analysis
-  - Include relevant context in error reports
-  - Handle errors in development vs production differently
-  - Implement rate limiting for error reporting
-  - Avoid unnecessary else statements; use if-return pattern instead.
-  - Use guard clauses to handle preconditions and invalid states early.
-  - Implement proper error logging and user-friendly error messages.
-  - Consider using custom error types or error factories for consistent error handling.
+    - Implement proper error logging with context for server-side errors
+
+    - Handle async errors with proper loading and error states
+
+## Client-Side Error Handling
+
+    - Use React Error Boundary components for catching rendering errors
+
+    - Implement fallback UI components for error states
+
+    - Use try-catch blocks only for unexpected runtime errors and async operations
+
+    - Use React.Suspense for handling loading states
+
+## Form Validation
+
+    - Use Zod for type-safe form validation
+
+    - Implement client-side validation before submission
+
+    - Use server-side validation as a security measure
+
+    - Provide immediate feedback for validation errors
+
+    - Use proper ARIA attributes for accessibility
+
+    - Handle all form submission edge cases
+
+    - Implement proper validation error messages
+
+## API Error Handling
+
+    - Use proper HTTP status codes for different error types
+
+    - Implement consistent error response format
+
+    - Handle network errors and timeouts gracefully
+
+    - Provide retry mechanisms for transient failures
+
+    - Log API errors with relevant context for debugging
+
+    - Implement proper error recovery strategies
+
+## Error Monitoring and Reporting
+
+    - Implement proper error tracking and monitoring
+
+    - Use structured logging for better error analysis
+
+    - Include relevant context in error reports
+
+    - Handle errors in development vs production differently
+
+    - Implement rate limiting for error reporting
+
+    - Use proper error analytics and monitoring tools

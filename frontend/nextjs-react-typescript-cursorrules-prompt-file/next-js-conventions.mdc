@@ -1,121 +1,218 @@
-- Server Components (RSC):
+# Next.js Conventions and Best Practices
 
-  - Use Server Components by default
-  - Keep client components minimal and focused
-  - Use 'use client' only when necessary:
-    - Interactive UI elements
-    - Browser API access
-    - Client-side state management
-  - Implement proper component boundaries
-  - Use proper data fetching patterns
-  - Follow proper caching strategies
-  - Leverage streaming and suspense
-  - Use Next.js 15's enhanced partial prerendering
-  - Leverage server-only packages with 'server-only' import
-  - Use proper component composition patterns
-  - Pass Server Components as children to Client Components
-  - Keep layouts as Server Components
-  - Use dynamic imports for Client Components
+## File Structure and Naming
 
-- Performance Optimization:
+    - Follow Next.js App Router conventions:
+        - layout.tsx: Must use default export
+        - page.tsx: Must use default export
+        - error.tsx: Must use default export
+        - loading.tsx: Must use default export
+        - not-found.tsx: Must use default export
+        - template.tsx: Must use default export
+        - route.ts: Must use default export
 
-  - Prioritize Core Web Vitals:
-    - Largest Contentful Paint (LCP)
-    - First Input Delay (FID)
-    - Cumulative Layout Shift (CLS)
-    - Interaction to Next Paint (INP)
-  - Implement proper image optimization
-  - Use proper font loading strategies
-  - Implement proper code splitting
-  - Use proper resource preloading
-  - Follow proper caching patterns
-  - Monitor performance metrics
-  - Use Next.js 15's partial prerendering
-  - Leverage static exports with dynamic features
-  - Use Next.js 15's enhanced static optimization
+    - File naming conventions:
+        - Component files: MUST use PascalCase (e.g., Button.tsx, UserProfile.tsx, AuthLayout.tsx)
+        - Utility files (.ts): kebab-case
+        - Config files: kebab-case
+        - Test files: kebab-case.test.ts
+        - Story files: camelCase.stories.tsx
 
-- Routing and Navigation:
+    - Folder naming:
+        - Follow Next.js app router case
+        - Use kebab-case for feature folders
+        - Group by feature/domain
 
-  - Use App Router for modern routing
-  - Implement proper dynamic routes
-  - Use proper loading states
-  - Implement proper error handling
-  - Use proper parallel routes
-  - Follow proper navigation patterns
-  - Use proper route groups
+## Server Components (RSC)
 
-- Data Fetching:
+    - Use Server Components by default:
+        - Keep client components minimal
+        - Maximum JSX depth: 5 levels
+        - Maximum props: 3
+        - No relative imports
 
-  - Use Server Components for data fetching
-  - Implement proper caching strategies:
-    - Use { cache: 'force-cache' } for static data
-    - Use { cache: 'no-store' } for dynamic data
-    - Use { next: { revalidate: n } } for ISR
-  - Use proper revalidation patterns
-  - Follow proper error handling
-  - Use proper loading states
-  - Implement proper optimistic updates
-  - Use proper mutation patterns
-  - Leverage Next.js 15's enhanced data fetching
-  - Use server actions for mutations
-  - Implement proper cache revalidation
-  - Use Suspense for streaming data
+    - Client Component boundaries:
+        - Mark with 'use client'
+        - Keep interactive logic isolated
+        - Handle client-side state locally
+        - Follow proper event handling
 
-- State Management:
+    - Data fetching patterns:
+        - Use Server Components for data fetching
+        - Handle errors with error.tsx
+        - Implement proper loading states
+        - Use proper TypeScript types
 
-  - Keep state close to where it's used
-  - Use Server Components for shared state
-  - Keep client state minimal
-  - Use proper form handling with Server Actions
-  - Implement proper cache invalidation
-  - Use proper context boundaries
-  - Follow proper state persistence
-  - Use proper state synchronization
-  - Wrap context providers in Client Components
-  - Use custom hooks for context access
+    - Component composition:
+        - Pass Server Components as children
+        - Keep layouts as Server Components
+        - Use dynamic imports for Client Components
+        - Follow proper prop typing
 
-- Security:
+## Performance Optimization
 
-  - Implement proper authentication
-  - Use proper authorization
-  - Follow proper CORS policies
-  - Implement proper CSP
-  - Use proper input validation
-  - Follow proper security headers
-  - Implement proper error handling
+    - Core Web Vitals optimization:
+        - Largest Contentful Paint (LCP)
+        - First Input Delay (FID)
+        - Cumulative Layout Shift (CLS)
+        - Interaction to Next Paint (INP)
 
-- SEO and Metadata:
+    - Image optimization:
+        - Use Next.js Image component
+        - Proper sizing and formats
+        - Loading strategies
+        - Proper alt text
 
-  - Use proper metadata API
-  - Implement proper dynamic metadata
-  - Use proper OpenGraph tags
-  - Follow proper sitemap generation
-  - Use proper robots.txt
-  - Implement proper structured data
-  - Follow proper canonical URLs
+    - Resource optimization:
+        - Proper code splitting
+        - Bundle optimization
+        - Font loading
+        - Asset preloading
 
-- Development Practices:
+    - Caching strategies:
+        - Static data caching
+        - Dynamic data handling
+        - Revalidation patterns
+        - Cache invalidation
 
-  - Use proper TypeScript configuration
-  - Follow proper testing patterns
-  - Use proper environment variables
-  - Implement proper logging
-  - Use proper debugging tools
-  - Follow proper documentation
-  - Use proper deployment strategies
-  - Leverage Next.js 15's enhanced dev tools
-  - Use Turbopack in development
-  - Follow Next.js 15's best practices
+## Routing and Navigation
 
-- Accessibility:
-  - Follow WCAG guidelines
-  - Use proper ARIA attributes
-  - Implement proper keyboard navigation
-  - Use proper focus management
-  - Follow proper color contrast
-  - Use proper semantic HTML
-  - Implement proper screen reader support
-  - Prefer server components and Next.js SSR features.
-  - Use 'use client' only for Web API access in small components.
-  - Avoid using 'use client' for data fetching or state management.
-  - Refer to Next.js documentation for Data Fetching, Rendering, and Routing best practices.
+    - App Router implementation:
+        - Proper route segmentation
+        - Dynamic route handling
+        - Route groups usage
+        - Parallel routes
+
+    - Navigation patterns:
+        - Type-safe navigation
+        - Proper loading states
+        - Error boundary usage
+        - Proper TypeScript types
+
+## Data Fetching
+
+    - Server Component patterns:
+        - Use { cache: 'force-cache' } for static
+        - Use { cache: 'no-store' } for dynamic
+        - Use { next: { revalidate: n } } for ISR
+        - Proper error handling
+
+    - Mutation patterns:
+        - Use Server Actions
+        - Proper validation
+        - Error handling
+        - Optimistic updates
+
+    - Type safety:
+        - Use Zod for validation
+        - Proper TypeScript types
+        - Error type definitions
+        - Response type safety
+
+## State Management
+
+    - Server-side state:
+        - Keep in Server Components
+        - Proper type definitions
+        - Error handling
+        - Cache management
+
+    - Client-side state:
+        - Minimal client state
+        - Proper React hooks
+        - Type-safe context
+        - Proper event handling
+
+## Security
+
+    - Authentication:
+        - Proper auth patterns
+        - Type-safe session
+        - Error handling
+        - Proper validation
+
+    - Authorization:
+        - Role-based access
+        - Type-safe checks
+        - Error handling
+        - Proper validation
+
+    - Input validation:
+        - Use Zod schemas
+        - Server-side validation
+        - Type safety
+        - Error handling
+
+## SEO and Metadata
+
+    - Metadata implementation:
+        - Type-safe metadata
+        - Dynamic generation
+        - Proper validation
+        - Error handling
+
+    - SEO optimization:
+        - Proper meta tags
+        - Structured data
+        - Type safety
+        - Validation
+
+## Development Tools and Practices
+
+    - Code quality and style:
+        - Use ESLint for code linting with strict rules
+        - Use Prettier for consistent code formatting
+        - Use single quotes for strings
+        - Use template literals for string interpolation
+        - Follow consistent spacing and indentation
+        - Use early returns for guard clauses
+        - Avoid unnecessary else statements
+        - Use concise syntax for simple conditionals
+
+    - Development workflow:
+        - Use proper version control practices
+        - Follow code review guidelines
+        - Follow proper debugging practices
+        - Use proper CI/CD tools
+
+    - Testing:
+        - Implement comprehensive testing
+        - Component testing
+        - Integration testing
+        - Type testing
+        - Error testing
+
+    - Documentation:
+        - Component documentation
+        - Type documentation
+        - API documentation
+        - Error documentation
+        - Maintain up-to-date docs
+
+## TypeScript Configuration
+
+    - Enable strict mode
+    - Use proper type imports
+    - Follow type safety rules
+    - Implement proper validation
+    - Use Zod for schema validation
+    - Use type-safe patterns across:
+        - Navigation
+        - State management
+        - API responses
+        - Form handling
+        - Authentication/Authorization
+
+## Accessibility
+
+    - WCAG compliance:
+        - Proper ARIA usage
+        - Keyboard navigation
+        - Screen reader support
+        - Color contrast
+
+    - Implementation:
+        - Semantic HTML
+        - Focus management
+        - Error messaging
+        - Loading states

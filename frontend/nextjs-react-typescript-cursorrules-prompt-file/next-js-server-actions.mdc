@@ -1,112 +1,155 @@
-- Server Action Implementation:
+# Server Actions Guidelines
 
-  - Use built-in Next.js 15 server actions
-  - Define server actions with 'use server' directive
-  - Place 'use server' at file level for module-wide actions
-  - Place 'use server' inside function for component-level actions
-  - Implement proper input validation with Zod
-  - Follow proper error handling patterns
-  - Use proper TypeScript types
-  - Implement proper security measures
-  - Follow proper performance patterns
-  - Use proper logging and monitoring
-  - Pass server actions as props to Client Components
-  - Use formAction for form submissions
+## Code Organization
 
-- Error Handling:
+    - Directory structure:
+        - Place in /app/actions/ directory for global actions
+        - Use feature-specific locations for feature-scoped actions
+        - Use kebab-case for files
+        - Use descriptive names with feature prefixes
+        - Example: user-management.action.ts
 
-  - Model expected errors as return values
-  - Use error boundaries for unexpected errors
-  - Implement proper error logging
-  - Use proper error types
-  - Follow proper error recovery
-  - Implement proper fallback UI
-  - Use proper error messages
-  - Handle errors gracefully in Client Components
-  - Use try/catch only for unexpected errors
-  - Return structured error responses
+    - File organization:
+        - Group imports logically:
+          1. External dependencies
+          2. Type imports
+          3. Internal utilities
+          4. Local types/interfaces
+        - No relative imports
+        - Maximum 3 parameters per action
 
-- Form Handling:
+## Implementation
 
-  - Use Next.js 15's built-in form actions
-  - Use useFormState and useFormStatus hooks
-  - Implement proper form validation
-  - Use proper loading states
-  - Follow proper accessibility
-  - Implement proper error feedback
-  - Use proper success feedback
-  - Follow proper UX patterns
-  - Leverage Next.js 15's built-in form components
-  - Use Server Actions for form submissions
+    - Action definition:
+        - Use 'use server' directive at file level
+        - Export as named exports
+        - Type-safe parameters with 'T' prefix
+        - Use async/await for all async operations
+        - Example:
+          'use server'
 
-- Type Safety:
+          type TUpdateUserParams = {
+            id: string;
+            data: TUserData;
+            options?: TUpdateOptions;
+          };
 
-  - Use proper TypeScript types for actions
-  - Implement proper input validation
-  - Use proper type inference
-  - Follow proper type exports
-  - Use proper type guards
-  - Implement proper type checking
-  - Use proper type documentation
-  - Type server actions properly
-  - Use interfaces for action parameters
-  - Type action responses properly
+          export const updateUser = async ({
+            id,
+            data,
+            options = {},
+          }: TUpdateUserParams) => {
+            // implementation
+          };
 
-- Security:
+    - Function style:
+        - Use arrow functions for consistency
+        - Implement early returns for error cases
+        - Use proper type guards for type narrowing
+        - Use optional chaining and nullish coalescing
+        - Keep functions pure and focused
 
-  - Implement proper input sanitization
-  - Use proper CSRF protection
-  - Follow proper authentication
-  - Use proper authorization
-  - Implement proper rate limiting
-  - Follow proper security headers
-  - Use proper validation patterns
-  - Validate data on the server
-  - Use cookies securely
-  - Implement proper security checks
+## Type Safety and Error Handling
 
-- Performance:
+    - Type safety:
+        - Use proper error type definitions
+        - Type-safe parameters and responses
+        - Type-safe forms with Zod
+        - Type-safe server state
+        - Use proper type guards
 
-  - Use proper caching strategies
-  - Use Next.js 15's built-in optimistic updates
-  - Follow proper revalidation patterns
-  - Use proper loading states
-  - Implement proper error recovery
-  - Use proper streaming patterns
-  - Follow proper performance monitoring
-  - Leverage Next.js 15's enhanced caching
-  - Use server-only validation
-  - Implement proper optimistic UI
+    - Error handling:
+        - Implement error recovery strategies
+        - Use structured error logging
+        - Handle validation errors
+        - Provide error reporting
+        - Use error boundaries where appropriate
 
-- Code Organization:
+## Server Action Patterns
 
-  - Keep actions in services directory
-  - Follow proper file structure
-  - Use proper naming conventions
-  - Implement proper separation
-  - Follow proper module boundaries
-  - Use proper dependency management
-  - Implement proper documentation
+    - Form handling:
+        - Use formAction prop
+        - Type-safe forms with Zod
+        - Server-side validation
+        - Loading states with useFormStatus
 
-- Testing:
 
-  - Write comprehensive unit tests
-  - Implement proper integration tests
-  - Use proper mocking strategies
-  - Follow proper test coverage
-  - Use proper test utilities
-  - Implement proper test fixtures
-  - Follow proper testing patterns
+    - Data mutations:
+        - Optimistic updates
+        - Cache revalidation
+        - Error recovery
+        - Type-safe responses
 
-- Monitoring and Debugging:
-  - Implement proper logging
-  - Use proper error tracking
-  - Follow proper monitoring
-  - Use proper debugging tools
-  - Implement proper metrics
-  - Use proper analytics
-  - Follow proper observability
-  - Handle errors gracefully and return appropriate responses.
-  - Use import type { ActionResponse } from '@/types/actions'
-  - Ensure all server actions return the ActionResponse type
-  - Implement consistent error handling and success responses using ActionResponse
+
+    - State management:
+        - Use useFormState hook
+        - Type-safe server state
+        - Proper error states
+        - Loading indicators
+
+## Security
+
+    - Input validation:
+        - Zod validation
+        - Type checking
+        - Sanitization
+        - Rate limiting
+
+
+    - Authentication:
+        - Type-safe session
+        - Role checking
+        - Permission validation
+        - Error handling
+
+
+    - Data safety:
+        - SQL injection prevention
+        - XSS prevention
+        - CSRF protection
+        - Input sanitization
+
+## Performance
+
+    - Caching:
+        - Proper cache headers
+        - Revalidation
+        - Cache invalidation
+        - Edge caching
+
+
+    - Optimization:
+        - Minimal client state
+        - Proper loading states
+        - Optimistic updates
+        - Response streaming
+
+## Testing
+
+    - Unit tests:
+        - Action testing
+        - Type testing
+        - Error testing
+        - Integration tests
+
+
+    - Test organization:
+        - Test file naming: *.test.ts
+        - Test structure
+        - Mock data
+        - Error cases
+
+## Monitoring
+
+    - Error tracking:
+        - Structured logging
+        - Error reporting
+        - Performance monitoring
+        - Usage analytics
+
+
+    - Debugging:
+        - Development tools
+        - Error tracing
+        - Performance profiling
+        - Log analysis
