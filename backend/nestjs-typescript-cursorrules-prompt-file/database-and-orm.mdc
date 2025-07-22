@@ -1,0 +1,139 @@
+# Database and ORM Guidelines
+
+## Entity Design
+
+    - Structure entities:
+        - Define clear models
+        - Use proper types
+        - Add relationships
+        - Include validations
+        - Document fields
+
+    - Handle relationships:
+        - Define associations
+        - Manage cascades
+        - Handle lazy loading
+        - Set up indexes
+        - Optimize queries
+
+    - Implement validation:
+        - Use decorators
+        - Add constraints
+        - Handle nullables
+        - Validate types
+        - Document rules
+
+## Repository Pattern
+
+    - Create repositories:
+        - Extend base repo
+        - Add custom methods
+        - Handle transactions
+        - Implement caching
+        - Document usage
+
+    - Manage queries:
+        - Write efficient queries
+        - Use query builder
+        - Handle pagination
+        - Implement filtering
+        - Enable sorting
+
+    - Handle transactions:
+        - Use unit of work
+        - Manage rollbacks
+        - Handle deadlocks
+        - Monitor performance
+        - Log operations
+
+## Database Operations
+
+    - Optimize performance:
+        - Use proper indexes
+        - Write efficient queries
+        - Handle N+1 problems
+        - Implement caching
+        - Monitor execution
+
+    - Manage connections:
+        - Configure pool
+        - Handle timeouts
+        - Monitor health
+        - Log operations
+        - Handle failures
+
+    - Handle migrations:
+        - Version changes
+        - Write migrations
+        - Test rollbacks
+        - Document changes
+        - Automate deployment
+
+## Data Security
+
+    - Protect data:
+        - Encrypt sensitive data
+        - Hash passwords
+        - Handle PII
+        - Audit access
+        - Log changes
+
+    - Manage access:
+        - Set permissions
+        - Control access
+        - Handle roles
+        - Monitor usage
+        - Track changes
+
+    - Implement backups:
+        - Schedule backups
+        - Test restoration
+        - Monitor storage
+        - Handle failures
+        - Document procedures
+
+## Query Optimization
+
+    - Write queries:
+        - Use proper joins
+        - Optimize selects
+        - Handle pagination
+        - Implement caching
+        - Monitor performance
+
+    - Handle caching:
+        - Configure cache
+        - Set TTL
+        - Handle invalidation
+        - Monitor hits
+        - Optimize storage
+
+    - Monitor performance:
+        - Track execution
+        - Log slow queries
+        - Analyze patterns
+        - Set thresholds
+        - Take action
+
+## Testing
+
+    - Write tests:
+        - Test repositories
+        - Check queries
+        - Verify transactions
+        - Test migrations
+        - Validate results
+
+    - Handle test data:
+        - Create fixtures
+        - Manage seeds
+        - Clean data
+        - Version datasets
+        - Document usage
+
+    - Test performance:
+        - Benchmark queries
+        - Test load
+        - Check memory
+        - Monitor execution
+        - Document results

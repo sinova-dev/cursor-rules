@@ -1,0 +1,167 @@
+# NestJS Conventions and Best Practices
+
+## Module Organization
+
+    - Structure modules:
+        - Create feature modules
+        - Follow single responsibility
+        - Export public interfaces
+        - Hide implementation details
+        - Use dependency injection
+
+    - Define providers:
+        - Create injectable services
+        - Use proper scope
+        - Implement interfaces
+        - Follow SOLID principles
+        - Document dependencies
+
+    - Build controllers:
+        - Handle HTTP requests
+        - Use proper decorators
+        - Validate inputs
+        - Return consistent responses
+        - Document endpoints
+
+## Code Structure
+
+    - Organize files:
+        - Use feature-based structure
+        - Follow naming conventions:
+          - *.controller.ts
+          - *.service.ts
+          - *.module.ts
+          - *.entity.ts
+          - *.dto.ts
+        - Group related files
+        - Create index exports
+        - Maintain hierarchy
+
+    - Implement patterns:
+        - Use dependency injection
+        - Apply SOLID principles
+        - Follow repository pattern
+        - Implement decorators properly
+        - Create custom providers
+
+    - Handle configuration:
+        - Use ConfigService
+        - Validate environment
+        - Type configuration
+        - Secure sensitive data
+        - Document settings
+
+## API Design
+
+    - Define routes:
+        - Use RESTful conventions
+        - Version endpoints
+        - Handle errors properly
+        - Validate requests
+        - Document with Swagger
+
+    - Structure responses:
+        - Use consistent format
+        - Include status codes
+        - Handle pagination
+        - Implement filtering
+        - Support sorting
+
+    - Manage validation:
+        - Use class-validator
+        - Create DTOs
+        - Handle edge cases
+        - Return clear errors
+        - Document constraints
+
+## Error Handling
+
+    - Implement exceptions:
+        - Use built-in exceptions
+        - Create custom exceptions
+        - Handle async errors
+        - Log properly
+        - Return clear messages
+
+    - Handle edge cases:
+        - Validate inputs
+        - Check permissions
+        - Handle timeouts
+        - Manage retries
+        - Document failures
+
+    - Log errors:
+        - Use proper levels
+        - Include context
+        - Structure messages
+        - Enable tracing
+        - Monitor issues
+
+## Performance
+
+    - Optimize code:
+        - Use caching
+        - Implement lazy loading
+        - Optimize queries
+        - Handle memory
+        - Profile performance
+
+    - Manage resources:
+        - Control connections
+        - Handle timeouts
+        - Implement pooling
+        - Monitor usage
+        - Set limits
+
+    - Handle scaling:
+        - Design for scale
+        - Use microservices
+        - Implement queues
+        - Enable clustering
+        - Monitor performance
+
+## Security
+
+    - Implement authentication:
+        - Use proper guards
+        - Secure endpoints
+        - Handle sessions
+        - Manage tokens
+        - Log access
+
+    - Control authorization:
+        - Define roles
+        - Check permissions
+        - Secure resources
+        - Handle access
+        - Audit actions
+
+    - Protect data:
+        - Validate inputs
+        - Sanitize outputs
+        - Encrypt sensitive data
+        - Handle PII
+        - Follow standards
+
+## Testing
+
+    - Write tests:
+        - Create unit tests
+        - Build integration tests
+        - Test edge cases
+        - Mock dependencies
+        - Measure coverage
+
+    - Structure tests:
+        - Follow naming conventions
+        - Group related tests
+        - Share fixtures
+        - Mock services
+        - Document scenarios
+
+    - Automate testing:
+        - Run in CI/CD
+        - Monitor coverage
+        - Track performance
+        - Report issues
+        - Maintain quality
