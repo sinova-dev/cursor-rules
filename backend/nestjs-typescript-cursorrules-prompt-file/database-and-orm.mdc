@@ -8,29 +8,49 @@
         - Add relationships
         - Include validations
         - Document fields
+        - Use TypeORM decorators
+        - Define entity interfaces
+        - Type relationships explicitly
+        - Handle nullable fields properly
+        - Use strict types consistently
 
     - Handle relationships:
-        - Define associations
-        - Manage cascades
-        - Handle lazy loading
-        - Set up indexes
-        - Optimize queries
+        - Define typed associations
+        - Type cascade operations
+        - Handle lazy loading with types
+        - Set up indexed properties
+        - Type query relationships
+        - Use generic repositories
+        - Type lazy relations properly
+        - Handle circular dependencies
+        - Type eager loading operations
+        - Define relation interfaces
 
     - Implement validation:
-        - Use decorators
-        - Add constraints
-        - Handle nullables
-        - Validate types
-        - Document rules
+        - Use class-validator decorators
+        - Define validation interfaces
+        - Handle nullable properties
+        - Type check constraints
+        - Document validation rules
+        - Use custom validators
+        - Type transformation pipes
+        - Handle validation errors
+        - Type coercion rules
+        - Validate nested objects
 
 ## Repository Pattern
 
     - Create repositories:
-        - Extend base repo
-        - Add custom methods
-        - Handle transactions
-        - Implement caching
-        - Document usage
+        - Extend typed base repository
+        - Define method signatures
+        - Type transactions properly
+        - Type cache operations
+        - Document method types
+        - Use generic repositories
+        - Type custom queries
+        - Handle async operations
+        - Define return types
+        - Type repository methods
 
     - Manage queries:
         - Write efficient queries
@@ -38,13 +58,21 @@
         - Handle pagination
         - Implement filtering
         - Enable sorting
+        - Type query builders
+        - Define result types
+        - Type query params
+        - Handle type safety
+        - Use query interfaces
 
     - Handle transactions:
-        - Use unit of work
-        - Manage rollbacks
-        - Handle deadlocks
-        - Monitor performance
-        - Log operations
+        - Type transaction scope
+        - Define rollback types
+        - Handle transaction errors
+        - Type transaction manager
+        - Monitor transaction state
+        - Type isolation levels
+        - Define transaction interfaces
+        - Handle nested transactions
 
 ## Database Operations
 
@@ -72,18 +100,28 @@
 ## Data Security
 
     - Protect data:
-        - Encrypt sensitive data
-        - Hash passwords
-        - Handle PII
-        - Audit access
-        - Log changes
+        - Type sensitive data
+        - Define encryption interfaces
+        - Handle PII types
+        - Type audit records
+        - Log type changes
+        - Define security interfaces
+        - Type access controls
+        - Handle data masking
+        - Type security contexts
+        - Define permission types
 
     - Manage access:
-        - Set permissions
-        - Control access
-        - Handle roles
-        - Monitor usage
-        - Track changes
+        - Type permission checks
+        - Define access interfaces
+        - Type role hierarchies
+        - Monitor access patterns
+        - Track type changes
+        - Define access levels
+        - Type security decorators
+        - Handle access errors
+        - Type security context
+        - Define guard types
 
     - Implement backups:
         - Schedule backups
@@ -95,18 +133,28 @@
 ## Query Optimization
 
     - Write queries:
-        - Use proper joins
-        - Optimize selects
-        - Handle pagination
-        - Implement caching
-        - Monitor performance
+        - Type query builders
+        - Define result types
+        - Handle pagination types
+        - Type cache operations
+        - Monitor query performance
+        - Use query interfaces
+        - Type join operations
+        - Handle null values
+        - Define query options
+        - Type query parameters
 
     - Handle caching:
-        - Configure cache
-        - Set TTL
-        - Handle invalidation
-        - Monitor hits
-        - Optimize storage
+        - Type cache operations
+        - Define TTL interfaces
+        - Type cache invalidation
+        - Monitor cache hits
+        - Type cache storage
+        - Handle cache errors
+        - Define cache keys
+        - Type cache strategies
+        - Handle cache updates
+        - Define cache interfaces
 
     - Monitor performance:
         - Track execution
@@ -118,18 +166,28 @@
 ## Testing
 
     - Write tests:
-        - Test repositories
-        - Check queries
-        - Verify transactions
-        - Test migrations
-        - Validate results
+        - Type test fixtures
+        - Define mock types
+        - Handle test data
+        - Type assertions
+        - Document test cases
+        - Use test interfaces
+        - Type test utilities
+        - Handle async tests
+        - Define test suites
+        - Type test results
 
     - Handle test data:
-        - Create fixtures
-        - Manage seeds
-        - Clean data
-        - Version datasets
-        - Document usage
+        - Type test fixtures
+        - Define seed interfaces
+        - Handle data cleanup
+        - Type test datasets
+        - Document test data
+        - Use factory types
+        - Handle test state
+        - Type mock data
+        - Define test scenarios
+        - Handle data versioning
 
     - Test performance:
         - Benchmark queries

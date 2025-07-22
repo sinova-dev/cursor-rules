@@ -3,137 +3,227 @@
 ## Exception Handling
 
     - Implement filters:
-        - Create exception filters
-        - Handle HTTP exceptions
-        - Catch custom errors
-        - Format error responses
-        - Log error details
+        - Create typed exception filters
+        - Handle HTTP exceptions properly
+        - Type custom error classes
+        - Define error response interfaces
+        - Type error logging
+        - Use error type guards
+        - Handle async errors
+        - Type filter metadata
+        - Define error hierarchies
+        - Implement error transformers
 
     - Use built-in exceptions:
-        - Apply HttpException
-        - Choose correct status
-        - Include error messages
-        - Add error codes
-        - Provide details
+        - Extend HttpException properly
+        - Type status codes
+        - Define error messages
+        - Use error code enums
+        - Type error details
+        - Handle error inheritance
+        - Define exception interfaces
+        - Type error context
+        - Use error factories
+        - Document error types
 
     - Create custom exceptions:
-        - Extend HttpException
-        - Define error types
-        - Add metadata
-        - Document usage
-        - Handle consistently
+        - Extend base exception types
+        - Define error hierarchies
+        - Type error metadata
+        - Document error usage
+        - Handle error consistency
+        - Use error discriminators
+        - Type error payloads
+        - Implement error mapping
+        - Define error constants
+        - Handle error serialization
 
 ## Request Validation
 
     - Validate DTOs:
-        - Use class-validator
-        - Define constraints
-        - Add error messages
-        - Handle nested objects
-        - Validate arrays
+        - Use class-validator decorators
+        - Type validation constraints
+        - Define error messages
+        - Type nested objects
+        - Handle array validation
+        - Use validation interfaces
+        - Type custom validators
+        - Handle validation groups
+        - Define validation schemas
+        - Type validation context
 
     - Implement pipes:
-        - Use ValidationPipe
-        - Transform payloads
-        - Validate parameters
-        - Handle whitelist
-        - Strip unknown props
+        - Use ValidationPipe properly
+        - Type transformations
+        - Handle parameter validation
+        - Type whitelist options
+        - Handle property stripping
+        - Define pipe metadata
+        - Type custom pipes
+        - Handle validation errors
+        - Type transformation rules
+        - Implement pipe factories
 
     - Handle transformations:
-        - Parse query params
-        - Transform payloads
-        - Convert types
-        - Format dates
-        - Clean data
+        - Type query parameters
+        - Define transformation rules
+        - Handle type conversion
+        - Type date formatting
+        - Define clean data types
+        - Use transform decorators
+        - Handle type coercion
+        - Define transformation interfaces
+        - Type conversion rules
+        - Handle validation errors
 
 ## Response Validation
 
     - Validate responses:
-        - Check return types
-        - Validate structures
-        - Handle null values
-        - Format data
-        - Document schemas
+        - Type return values
+        - Define response interfaces
+        - Handle null checking
+        - Type data formatting
+        - Document response schemas
+        - Use response decorators
+        - Handle type safety
+        - Define success types
+        - Type error responses
+        - Handle void returns
 
     - Transform responses:
-        - Use interceptors
-        - Format data
-        - Remove sensitive info
-        - Handle pagination
-        - Add metadata
+        - Type interceptors properly
+        - Define transformation rules
+        - Handle sensitive data
+        - Type pagination results
+        - Define metadata types
+        - Use type guards
+        - Handle type inference
+        - Define mapper interfaces
+        - Type transformation context
+        - Implement serialization
 
     - Handle serialization:
-        - Use class-transformer
-        - Define exclusions
-        - Handle circular refs
-        - Version responses
-        - Document changes
+        - Use class-transformer properly
+        - Type exclusion rules
+        - Handle circular references
+        - Define version types
+        - Document type changes
+        - Use serialization groups
+        - Type custom transformers
+        - Handle inheritance
+        - Define serialization context
+        - Type metadata
 
 ## Error Logging
 
     - Configure logging:
-        - Set log levels
-        - Define formats
-        - Choose transports
-        - Handle async logs
-        - Rotate files
+        - Define log level types
+        - Type log formats
+        - Handle transport types
+        - Type async logging
+        - Define rotation rules
+        - Use logger interfaces
+        - Handle error context
+        - Type log metadata
+        - Define logger factories
+        - Handle log filtering
 
     - Structure logs:
-        - Include timestamps
-        - Add request IDs
-        - Log user context
-        - Track services
-        - Add metadata
+        - Type timestamp formats
+        - Define request ID types
+        - Type user context
+        - Handle service logging
+        - Define metadata types
+        - Use log decorators
+        - Type log levels
+        - Handle structured data
+        - Define log interfaces
+        - Type log transformers
 
     - Monitor errors:
-        - Track frequencies
-        - Alert on thresholds
-        - Analyze patterns
-        - Report issues
-        - Take action
+        - Type error frequencies
+        - Define alert thresholds
+        - Handle pattern analysis
+        - Type error reporting
+        - Define action types
+        - Use monitoring interfaces
+        - Handle error aggregation
+        - Type error metrics
+        - Define alert rules
+        - Handle error correlation
 
 ## Security Validation
 
     - Validate headers:
-        - Check auth tokens
-        - Verify origins
-        - Validate content types
-        - Check rate limits
-        - Handle versions
+        - Type authentication tokens
+        - Define origin types
+        - Handle content validation
+        - Type rate limits
+        - Define version types
+        - Use header interfaces
+        - Handle type safety
+        - Define validation rules
+        - Type security context
+        - Handle header parsing
 
     - Sanitize inputs:
-        - Clean user input
-        - Prevent injections
-        - Handle encoding
-        - Validate uploads
-        - Check sizes
+        - Type user input
+        - Handle injection prevention
+        - Define encoding types
+        - Type upload validation
+        - Handle size limits
+        - Use sanitization rules
+        - Type clean data
+        - Define security interfaces
+        - Handle validation errors
+        - Type sanitization context
 
     - Implement guards:
-        - Check permissions
-        - Validate roles
-        - Handle sessions
-        - Rate limit
-        - Log access
+        - Type permission checks
+        - Define role interfaces
+        - Handle session types
+        - Type rate limiting
+        - Define access logging
+        - Use guard factories
+        - Handle type safety
+        - Define guard context
+        - Type authorization rules
+        - Handle guard composition
 
 ## Testing Validation
 
     - Test validators:
-        - Check constraints
-        - Test edge cases
-        - Verify messages
-        - Mock services
-        - Document tests
+        - Type test constraints
+        - Define edge cases
+        - Handle error messages
+        - Type mock services
+        - Document test cases
+        - Use test factories
+        - Handle async validation
+        - Type test context
+        - Define test interfaces
+        - Handle test composition
 
     - Test transformations:
-        - Verify conversions
-        - Check formats
-        - Test nulls
-        - Handle errors
-        - Validate results
+        - Type conversions
+        - Define format tests
+        - Handle null cases
+        - Type error handling
+        - Define test results
+        - Use test decorators
+        - Handle type safety
+        - Define test scenarios
+        - Type transformation rules
+        - Handle edge cases
 
     - Test error handling:
-        - Check filters
-        - Test exceptions
-        - Verify logging
-        - Check responses
-        - Document cases
+        - Type filter tests
+        - Define exception cases
+        - Handle logging tests
+        - Type response testing
+        - Document test cases
+        - Use error factories
+        - Handle async errors
+        - Define test context
+        - Type error scenarios
+        - Handle error composition
