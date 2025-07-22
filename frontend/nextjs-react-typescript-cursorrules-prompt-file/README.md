@@ -14,7 +14,7 @@ Our tech stack includes:
 - Vite
 - Shadcn UI
 - Radix UI
-- Tailwind Aria
+- Tailwind
 - Turbopack (Development)
 
 ## Key Principles
@@ -22,8 +22,14 @@ Our tech stack includes:
 - Functional and declarative programming
 - Type safety with TypeScript
 - Server-first approach with Next.js
+- Measurable code quality standards:
+  - Component size limits
+  - Nesting depth restrictions
+  - Props count limitations
+- Consistent naming conventions
+- Comprehensive error handling
 - Performance optimization with Partial Prerendering
-- Consistent error handling
+- Feature-based code organization
 - Modern UI/UX practices
 - Enhanced static optimization
 
@@ -70,9 +76,26 @@ Our guidelines are implemented through:
 ## Best Practices
 
 - Use Server Components by default
+- Keep components focused and measurable:
+  - Maximum 100 lines per component
+  - Maximum 3 levels of nesting
+  - Maximum 8 props per component
+  - Required documentation for shared components
+- Follow naming conventions:
+  - PascalCase for React component files (.tsx)
+  - kebab-case for utility files and directories
+  - camelCase for utility functions
+  - PascalCase for React component functions
+- Implement comprehensive error handling:
+  - Use try/catch for async operations
+  - Use type guards for type narrowing
+  - Use optional chaining and nullish coalescing
+  - Implement error boundaries for components
 - Leverage Next.js 15's built-in Server Actions
-- Implement proper error boundaries
-- Follow mobile-first responsive design
+- Follow proper directory structure:
+  - /app/actions/ for app-wide actions
+  - /app/(features)/[feature]/ for feature code
+  - Group related components and utilities
 - Use Zod for form validation
 - Optimize for Core Web Vitals (including INP)
 - Follow proper TypeScript practices

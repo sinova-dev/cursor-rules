@@ -1,102 +1,156 @@
-- Component Architecture:
+# React and Next.js Components
 
-  - Use functional components with TypeScript
-  - Follow single responsibility principle
-  - Keep components small and focused
-  - Use proper component composition
-  - Implement proper prop typing
-  - Follow proper file structure
-  - Use proper naming conventions
+## Component Architecture
 
-- Server Components:
+    - Define components using arrow functions:
+        - Write components using arrow function syntax
+        - Export components as named exports
+        - Follow the example: const MyComponent = ({ prop }: TProps) => { ... }
+        - Avoid using function declarations
 
-  - Use Server Components by default
-  - Keep client components minimal
-  - Use proper component boundaries
-  - Implement proper data fetching
-  - Follow proper caching patterns
-  - Use proper streaming strategies
-  - Leverage proper suspense
+    - Apply TypeScript naming conventions:
+        - Prefix type aliases with 'T' (e.g., TProps)
+        - Prefix interfaces with 'I' (e.g., IProps)
+        - Start boolean props with verbs (is, should, has, can, was, did)
+        - Implement union types for better type safety
+        - Create reusable code with generics
 
-- Client Components:
+    - Maintain component focus:
+        - Limit JSX depth to 5 levels
+        - Restrict parameters to 3
+        - Create separate files for each component
+        - Write documentation for prop types
+        - Document all shared components
 
-  - Use 'use client' only when necessary
-  - Keep client-side state minimal
-  - Use proper hooks patterns
-  - Implement proper event handling
-  - Follow proper lifecycle management
-  - Use proper error boundaries
-  - Implement proper loading states
+    - Structure files and folders:
+        - Name component files in PascalCase (e.g., Button.tsx)
+        - Write utility files in kebab-case
+        - Follow Next.js app router conventions
+        - Organize by feature/domain
 
-- UI Components:
+    - Handle props effectively:
+        - Sort props with reserved props first
+        - Prefix event handlers with 'on'
+        - Implement default arguments
+        - Follow the example:
+          const Button = ({
+            children,
+            className,
+            onClick,
+            isDisabled = false
+          }: TProps) => { ... }
 
-  - Use Shadcn UI and Radix UI
-  - Follow proper accessibility (a11y)
-  - Use proper Tailwind patterns
-  - Implement proper responsive design
-  - Use proper animation patterns
-  - Follow proper theming
-  - Use proper component variants
+    - Organize code structure:
+        - Place types at the top of file
+        - Order components logically:
+          1. Define types and interfaces
+          2. Export main component
+          3. Write subcomponents
+          4. Implement helper functions
+          5. Define static content
+        - Apply modern patterns:
+          - Use optional chaining
+          - Implement nullish coalescing
+          - Apply array/object spread
+          - Write clean destructuring
 
-- Performance:
+## Client Components
 
-  - Use proper code splitting
-  - Implement proper lazy loading
-  - Use proper memoization
-  - Follow proper rendering optimization
-  - Use proper bundle optimization
-  - Implement proper caching
-  - Use proper resource loading
+    - Implement client features:
+        - Add 'use client' when needed
+        - Build interactive UI elements
+        - Access Browser APIs
+        - Handle user events
+        - Manage client state
 
-- Forms and Validation:
+    - Optimize performance:
+        - Minimize client-side state
+        - Implement proper hooks
+        - Handle events efficiently
+        - Manage component lifecycle
 
-  - Use Zod for form validation
-  - Implement proper form handling
-  - Use proper error messages
-  - Follow proper accessibility
-  - Use proper loading states
-  - Implement proper validation
-  - Use proper success feedback
+    - Handle errors:
+        - Implement error boundaries
+        - Create loading states
+        - Provide fallback UI
 
-- State Management:
+## UI Components
 
-  - Keep state close to usage
-  - Use proper context boundaries
-  - Implement proper state updates
-  - Follow proper state persistence
-  - Use proper state synchronization
-  - Implement proper error states
-  - Use proper loading states
+    - Build UI components:
+        - Integrate Shadcn UI and Radix UI
+        - Ensure accessibility (a11y)
+        - Apply Tailwind patterns
+        - Create responsive designs
+        - Implement animations thoughtfully
+        - Configure theming
+        - Design component variants
 
-- Component Organization:
+## Performance
 
-  - Follow feature-based structure
-  - Use proper module boundaries
-  - Implement proper separation
-  - Follow proper import ordering
-  - Use proper type organization
-  - Implement proper documentation
-  - Use proper testing patterns
+    - Optimize code:
+        - Split code strategically
+        - Implement lazy loading
+        - Apply memoization
+        - Enhance rendering
+        - Minimize bundles
+        - Configure caching
+        - Load resources efficiently
 
-- Image Optimization:
+## Forms and Validation
 
-  - Use Next.js Image component
-  - Implement proper lazy loading
-  - Use proper image formats
-  - Follow proper sizing patterns
-  - Use proper placeholder images
-  - Implement proper caching
-  - Use proper CDN integration
+    - Build forms:
+        - Implement Zod validation
+        - Handle form submissions
+        - Display error messages
+        - Ensure accessibility
+        - Show loading states
+        - Validate inputs
+        - Provide success feedback
 
-- Development Practices:
-  - Write comprehensive tests
-  - Use proper TypeScript features
-  - Follow proper documentation
-  - Use proper debugging tools
-  - Implement proper error handling
-  - Follow proper code review
-  - Use proper version control
-  - Use Zod for form validation.
-  - Wrap client components in Suspense with fallback.
-  - Use dynamic loading for non-critical components.
-  - Optimize images: WebP format, size data, lazy loading.
+## State Management
+
+    - Manage state:
+        - Keep state close to usage
+        - Define context boundaries
+        - Update state immutably
+        - Persist state when needed
+        - Synchronize state properly
+        - Handle error states
+        - Control loading states
+
+## Component Organization
+
+    - Organize components:
+        - Structure by features
+        - Define module boundaries
+        - Separate concerns properly
+        - Order imports logically
+        - Organize types effectively
+        - Write documentation
+        - Create test patterns
+
+## Image Optimization
+
+    - Optimize images:
+        - Use Next Image component
+        - Implement lazy loading
+        - Choose proper formats
+        - Define correct sizes
+        - Add placeholder images
+        - Configure caching
+        - Set up CDN integration
+
+## Development Practices
+
+    - Implement practices:
+        - Write comprehensive tests
+        - Use TypeScript features
+        - Document code thoroughly
+        - Debug effectively
+        - Handle errors properly
+        - Review code systematically
+        - Control versions properly
+        - Configure Zod validation
+        - Wrap Suspense components
+        - Load components dynamically
+        - Optimize image formats
