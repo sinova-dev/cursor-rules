@@ -83,9 +83,9 @@ Simply put the raw GitHub URLs inside your `.cursorrules` file or `.cursor/rules
 # Your custom rules here...
 
 # Reference external rules
-@https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/.cursorrules
-@https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/backend/nestjs-typescript-cursorrules-prompt-file/nestjs-conventions.mdc
-@https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/frontend/nextjs-react-typescript-cursorrules-prompt-file/next-js-conventions.mdc
+@import https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/.cursorrules
+@import https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/backend/nestjs-typescript-cursorrules-prompt-file/nestjs-conventions.mdc
+@import https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/frontend/nextjs-react-typescript-cursorrules-prompt-file/next-js-conventions.mdc
 ```
 
 **Example Rules (Full list available in repository):**
@@ -95,7 +95,7 @@ Simply put the raw GitHub URLs inside your `.cursorrules` file or `.cursor/rules
 - [UI/Styling Rules](https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/frontend/shadcn-and-tailwind/ui-and-styling-with-shadcn-ui-and-tailwind.mdc) - UI/UX standards and styling best practices
 
 **💡 Pro Tip**: You can reference ANY file from the repository using the same pattern:
-`https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/[file-path]`
+`@import https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/[file-path]`
 
 Browse the full repository at: [sinova-dev/cursor-rules](https://github.com/sinova-dev/cursor-rules) to see all available rules and copy the paths you need.
 
@@ -108,17 +108,17 @@ These commands create files and put URL references to rules in the repository. E
 **Commands to run:**
 
 ```bash
-# Creates .cursorrules file with URL reference to main rules
-curl -o .cursorrules https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/.cursorrules
+# Creates .cursorrules file with URL @import reference to main rules
+echo "@import https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/.cursorrules" > .cursorrules
 
 # Creates .cursor/rules directory for organized rule files
 mkdir -p .cursor/rules
 
-# Creates backend.mdc file with URL reference to NestJS rules
-curl -o .cursor/rules/backend.mdc https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/backend/nestjs-typescript-cursorrules-prompt-file/nestjs-conventions.mdc
+# Creates backend.mdc file with URL @import reference to NestJS rules
+echo "@import https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/backend/nestjs-typescript-cursorrules-prompt-file/nestjs-conventions.mdc" > .cursor/rules/backend.mdc
 
-# Creates frontend.mdc file with URL reference to Next.js rules
-curl -o .cursor/rules/frontend.mdc https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/frontend/nextjs-react-typescript-cursorrules-prompt-file/next-js-conventions.mdc
+# Creates frontend.mdc file with URL @import reference to Next.js rules
+echo "@import https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/frontend/nextjs-react-typescript-cursorrules-prompt-file/next-js-conventions.mdc" > .cursor/rules/frontend.mdc
 
 ```
 
