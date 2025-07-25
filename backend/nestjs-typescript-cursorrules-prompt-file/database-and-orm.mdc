@@ -1,0 +1,197 @@
+# Database and ORM Guidelines
+
+## Entity Design
+
+    - Structure entities:
+        - Define clear models
+        - Use proper types
+        - Add relationships
+        - Include validations
+        - Document fields
+        - Use TypeORM decorators
+        - Define entity interfaces
+        - Type relationships explicitly
+        - Handle nullable fields properly
+        - Use strict types consistently
+
+    - Handle relationships:
+        - Define typed associations
+        - Type cascade operations
+        - Handle lazy loading with types
+        - Set up indexed properties
+        - Type query relationships
+        - Use generic repositories
+        - Type lazy relations properly
+        - Handle circular dependencies
+        - Type eager loading operations
+        - Define relation interfaces
+
+    - Implement validation:
+        - Use class-validator decorators
+        - Define validation interfaces
+        - Handle nullable properties
+        - Type check constraints
+        - Document validation rules
+        - Use custom validators
+        - Type transformation pipes
+        - Handle validation errors
+        - Type coercion rules
+        - Validate nested objects
+
+## Repository Pattern
+
+    - Create repositories:
+        - Extend typed base repository
+        - Define method signatures
+        - Type transactions properly
+        - Type cache operations
+        - Document method types
+        - Use generic repositories
+        - Type custom queries
+        - Handle async operations
+        - Define return types
+        - Type repository methods
+
+    - Manage queries:
+        - Write efficient queries
+        - Use query builder
+        - Handle pagination
+        - Implement filtering
+        - Enable sorting
+        - Type query builders
+        - Define result types
+        - Type query params
+        - Handle type safety
+        - Use query interfaces
+
+    - Handle transactions:
+        - Type transaction scope
+        - Define rollback types
+        - Handle transaction errors
+        - Type transaction manager
+        - Monitor transaction state
+        - Type isolation levels
+        - Define transaction interfaces
+        - Handle nested transactions
+
+## Database Operations
+
+    - Optimize performance:
+        - Use proper indexes
+        - Write efficient queries
+        - Handle N+1 problems
+        - Implement caching
+        - Monitor execution
+
+    - Manage connections:
+        - Configure pool
+        - Handle timeouts
+        - Monitor health
+        - Log operations
+        - Handle failures
+
+    - Handle migrations:
+        - Version changes
+        - Write migrations
+        - Test rollbacks
+        - Document changes
+        - Automate deployment
+
+## Data Security
+
+    - Protect data:
+        - Type sensitive data
+        - Define encryption interfaces
+        - Handle PII types
+        - Type audit records
+        - Log type changes
+        - Define security interfaces
+        - Type access controls
+        - Handle data masking
+        - Type security contexts
+        - Define permission types
+
+    - Manage access:
+        - Type permission checks
+        - Define access interfaces
+        - Type role hierarchies
+        - Monitor access patterns
+        - Track type changes
+        - Define access levels
+        - Type security decorators
+        - Handle access errors
+        - Type security context
+        - Define guard types
+
+    - Implement backups:
+        - Schedule backups
+        - Test restoration
+        - Monitor storage
+        - Handle failures
+        - Document procedures
+
+## Query Optimization
+
+    - Write queries:
+        - Type query builders
+        - Define result types
+        - Handle pagination types
+        - Type cache operations
+        - Monitor query performance
+        - Use query interfaces
+        - Type join operations
+        - Handle null values
+        - Define query options
+        - Type query parameters
+
+    - Handle caching:
+        - Type cache operations
+        - Define TTL interfaces
+        - Type cache invalidation
+        - Monitor cache hits
+        - Type cache storage
+        - Handle cache errors
+        - Define cache keys
+        - Type cache strategies
+        - Handle cache updates
+        - Define cache interfaces
+
+    - Monitor performance:
+        - Track execution
+        - Log slow queries
+        - Analyze patterns
+        - Set thresholds
+        - Take action
+
+## Testing
+
+    - Write tests:
+        - Type test fixtures
+        - Define mock types
+        - Handle test data
+        - Type assertions
+        - Document test cases
+        - Use test interfaces
+        - Type test utilities
+        - Handle async tests
+        - Define test suites
+        - Type test results
+
+    - Handle test data:
+        - Type test fixtures
+        - Define seed interfaces
+        - Handle data cleanup
+        - Type test datasets
+        - Document test data
+        - Use factory types
+        - Handle test state
+        - Type mock data
+        - Define test scenarios
+        - Handle data versioning
+
+    - Test performance:
+        - Benchmark queries
+        - Test load
+        - Check memory
+        - Monitor execution
+        - Document results

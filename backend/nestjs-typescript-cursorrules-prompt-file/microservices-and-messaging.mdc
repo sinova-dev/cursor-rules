@@ -1,0 +1,137 @@
+# Microservices and Messaging Guidelines
+
+## Service Architecture
+
+    - Design services:
+        - Define boundaries
+        - Create contracts
+        - Handle communication
+        - Manage state
+        - Document interfaces
+
+    - Implement patterns:
+        - Use event sourcing
+        - Apply CQRS
+        - Handle sagas
+        - Manage events
+        - Document flows
+
+    - Handle scaling:
+        - Design for scale
+        - Manage instances
+        - Handle failover
+        - Monitor health
+        - Track metrics
+
+## Message Patterns
+
+    - Implement patterns:
+        - Use event-driven
+        - Apply pub/sub
+        - Handle RPC
+        - Manage queues
+        - Document flows
+
+    - Handle events:
+        - Define events
+        - Manage handlers
+        - Handle failures
+        - Track processing
+        - Monitor flow
+
+    - Manage queues:
+        - Configure queues
+        - Handle retries
+        - Monitor health
+        - Track metrics
+
+## Transport Layer
+
+    - Configure transport:
+        - Choose protocol
+        - Set up TCP/UDP
+        - Handle gRPC
+        - Configure Redis
+        - Use RabbitMQ
+
+    - Handle connections:
+        - Manage lifecycle
+        - Handle timeouts
+        - Implement retry
+        - Monitor health
+        - Log issues
+
+    - Optimize performance:
+        - Configure buffers
+        - Optimize serialization
+        - Monitor latency
+        - Track metrics
+
+## Error Handling
+
+    - Handle failures:
+        - Catch exceptions
+        - Implement retry
+        - Handle timeout
+        - Manage fallback
+        - Log errors
+
+    - Implement resilience:
+        - Use circuit breaker
+        - Handle timeout
+        - Implement fallback
+        - Monitor health
+        - Track failures
+
+    - Monitor errors:
+        - Track failures
+        - Alert on issues
+        - Analyze patterns
+        - Take action
+        - Document solutions
+
+## Service Discovery
+
+    - Implement discovery:
+        - Register services
+        - Handle health checks
+        - Manage instances
+        - Track changes
+        - Monitor status
+
+    - Manage registry:
+        - Update records
+        - Handle failures
+        - Clean stale data
+        - Monitor health
+        - Track changes
+
+    - Handle routing:
+        - Implement load balancing
+        - Manage traffic
+        - Handle failures
+        - Monitor performance
+        - Track metrics
+
+## Testing
+
+    - Test services:
+        - Write unit tests
+        - Test integration
+        - Check contracts
+        - Verify patterns
+        - Document tests
+
+    - Test messaging:
+        - Verify patterns
+        - Test handlers
+        - Check queues
+        - Monitor flow
+        - Track metrics
+
+    - Test resilience:
+        - Check failover
+        - Test recovery
+        - Verify scaling
+        - Monitor performance
+        - Document results

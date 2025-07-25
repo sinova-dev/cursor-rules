@@ -1,0 +1,260 @@
+# NestJS Conventions and Best Practices
+
+## TypeScript Best Practices
+
+    - Type Definitions:
+        - Enable strict type checking in tsconfig.json
+        - Use strict mode for better type safety
+        - Avoid 'any' type - use unknown for unknown types
+        - Leverage type inference when possible
+        - Create custom types for complex structures
+        - Use type guards for runtime type checking
+        - Implement interfaces for better contracts
+        - Use generics for reusable code
+        - Define enum constants for fixed values
+        - Use union and intersection types appropriately
+        - Document complex types with JSDoc
+
+    - Advanced TypeScript Features:
+        - Use mapped types for DTO transformations
+        - Implement utility types (Pick, Omit, Partial)
+        - Create conditional types for dynamic behavior
+        - Use type assertions only when necessary
+        - Handle discriminated unions for type narrowing
+        - Use readonly properties for immutability
+        - Leverage const assertions for literal types
+        - Implement abstract classes for base patterns
+        - Use method decorators effectively
+        - Apply proper type narrowing techniques
+
+    - TypeScript Configuration:
+        - Enable strict mode in tsconfig.json
+        - Configure paths aliases for imports
+        - Set proper module resolution
+        - Define appropriate build options
+        - Configure decorator metadata
+        - Set compiler options for optimization
+        - Enable source maps for debugging
+        - Manage declaration files properly
+        - Configure type checking rules
+        - Set up watch mode correctly
+
+    - DTO and Validation:
+        - Use class-validator decorators
+        - Create type-safe DTOs
+        - Implement DTO factories
+        - Use mapped types for transformations
+        - Handle nested object validation
+        - Validate arrays properly
+        - Use custom validators
+        - Implement transformation pipes
+        - Handle type coercion
+        - Document validation rules
+
+    - Error Handling:
+        - Create typed error classes
+        - Use error interfaces
+        - Implement type guards for errors
+        - Handle async errors properly
+        - Type error responses
+        - Use error enums
+        - Define error hierarchies
+        - Implement error filters
+        - Type error metadata
+        - Handle generic errors
+
+## Module Organization
+
+    - Structure modules:
+        - Create feature modules
+        - Follow single responsibility
+        - Export public interfaces
+        - Hide implementation details
+        - Use dependency injection
+        - Define strong types for modules
+        - Use generic module builders
+        - Type dynamic modules
+        - Leverage module decorators
+        - Document type constraints
+
+    - Define providers:
+        - Create injectable services
+        - Use proper scope
+        - Implement interfaces
+        - Follow SOLID principles
+        - Document dependencies
+        - Type injection tokens
+        - Use generic services
+        - Define provider types
+        - Type factory providers
+        - Handle async providers
+
+    - Build controllers:
+        - Handle HTTP requests
+        - Use proper decorators
+        - Validate inputs
+        - Return consistent responses
+        - Document endpoints
+        - Type request params
+        - Define response types
+        - Use param decorators
+        - Type query builders
+        - Handle type transformations
+
+## Code Structure
+
+    - Organize files:
+        - Use feature-based structure
+        - Follow naming conventions:
+          - *.controller.ts
+          - *.service.ts
+          - *.module.ts
+          - *.entity.ts
+          - *.dto.ts
+          - *.interface.ts
+          - *.type.ts
+          - *.enum.ts
+          - *.constant.ts
+          - *.decorator.ts
+        - Group related files
+        - Create index exports
+        - Maintain hierarchy
+
+    - Implement patterns:
+        - Use dependency injection
+        - Apply SOLID principles
+        - Follow repository pattern
+        - Implement decorators properly
+        - Create custom providers
+        - Type design patterns
+        - Use generic repositories
+        - Type factory patterns
+        - Handle abstract types
+        - Implement type guards
+
+    - Handle configuration:
+        - Use ConfigService
+        - Validate environment
+        - Type configuration
+        - Secure sensitive data
+        - Document settings
+        - Define config interfaces
+        - Use env type validation
+        - Type config schemas
+        - Handle nested config
+        - Use config factories
+
+## API Design
+
+    - Define routes:
+        - Use RESTful conventions
+        - Version endpoints
+        - Handle errors properly
+        - Validate requests
+        - Document with Swagger
+
+    - Structure responses:
+        - Use consistent format
+        - Include status codes
+        - Handle pagination
+        - Implement filtering
+        - Support sorting
+
+    - Manage validation:
+        - Use class-validator
+        - Create DTOs
+        - Handle edge cases
+        - Return clear errors
+        - Document constraints
+
+## Error Handling
+
+    - Implement exceptions:
+        - Use built-in exceptions
+        - Create custom exceptions
+        - Handle async errors
+        - Log properly
+        - Return clear messages
+
+    - Handle edge cases:
+        - Validate inputs
+        - Check permissions
+        - Handle timeouts
+        - Manage retries
+        - Document failures
+
+    - Log errors:
+        - Use proper levels
+        - Include context
+        - Structure messages
+        - Enable tracing
+        - Monitor issues
+
+## Performance
+
+    - Optimize code:
+        - Use caching
+        - Implement lazy loading
+        - Optimize queries
+        - Handle memory
+        - Profile performance
+
+    - Manage resources:
+        - Control connections
+        - Handle timeouts
+        - Implement pooling
+        - Monitor usage
+        - Set limits
+
+    - Handle scaling:
+        - Design for scale
+        - Use microservices
+        - Implement queues
+        - Enable clustering
+        - Monitor performance
+
+## Security
+
+    - Implement authentication:
+        - Use proper guards
+        - Secure endpoints
+        - Handle sessions
+        - Manage tokens
+        - Log access
+
+    - Control authorization:
+        - Define roles
+        - Check permissions
+        - Secure resources
+        - Handle access
+        - Audit actions
+
+    - Protect data:
+        - Validate inputs
+        - Sanitize outputs
+        - Encrypt sensitive data
+        - Handle PII
+        - Follow standards
+
+## Testing
+
+    - Write tests:
+        - Create unit tests
+        - Build integration tests
+        - Test edge cases
+        - Mock dependencies
+        - Measure coverage
+
+    - Structure tests:
+        - Follow naming conventions
+        - Group related tests
+        - Share fixtures
+        - Mock services
+        - Document scenarios
+
+    - Automate testing:
+        - Run in CI/CD
+        - Monitor coverage
+        - Track performance
+        - Report issues
+        - Maintain quality
