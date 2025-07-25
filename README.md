@@ -71,13 +71,22 @@ your-project/
 
 ### 2. **Setup Cursor Rules in Your Project**
 
-#### Option A (recommended): Download from GitHub Raw Links
+#### Option A (recommended): Reference Rules Directly from Repository
 
-**How to use these raw links:**
+**How to use raw repository links:**
 
-1. **Direct Download**: Click any link below to view the raw content, then copy and paste into your `.cursorrules` file
-2. **Command Line**: Use `curl` or `wget` to download directly to your project
-3. **Browser Download**: Right-click and "Save As" to download the file
+Simply put the raw GitHub URLs inside your `.cursorrules` file or `.cursor/rules/` files. Cursor will automatically fetch and apply these rules when needed.
+
+**Example - In your `.cursorrules` file:**
+
+```
+# Your custom rules here...
+
+# Reference external rules
+@https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/.cursorrules
+@https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/backend/nestjs-typescript-cursorrules-prompt-file/nestjs-conventions.mdc
+@https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/frontend/nextjs-react-typescript-cursorrules-prompt-file/next-js-conventions.mdc
+```
 
 **Example Rules (Full list available in repository):**
 
@@ -85,22 +94,32 @@ your-project/
 - [Next.js Conventions](https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/frontend/nextjs-react-typescript-cursorrules-prompt-file/next-js-conventions.mdc) - Next.js framework-specific patterns and conventions
 - [UI/Styling Rules](https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/frontend/shadcn-and-tailwind/ui-and-styling-with-shadcn-ui-and-tailwind.mdc) - UI/UX standards and styling best practices
 
-**💡 Pro Tip**: You can access ANY file from the repository using the same pattern:
+**💡 Pro Tip**: You can reference ANY file from the repository using the same pattern:
 `https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/[file-path]`
 
 Browse the full repository at: [sinova-dev/cursor-rules](https://github.com/sinova-dev/cursor-rules) to see all available rules and copy the paths you need.
 
-**Quick Setup Commands:**
+#### Alternative CLI approach:
+
+**💡 What these commands do:**
+
+These commands create files and put URL references to rules in the repository. Each file will contain the actual rule content that Cursor can read and apply to your project directly from the GitHub repo.
+
+**Commands to run:**
 
 ```bash
-# Download main rules to your project root
+# Creates .cursorrules file with URL reference to main rules
 curl -o .cursorrules https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/.cursorrules
 
-# Download specific rules to organized folders
+# Creates .cursor/rules directory for organized rule files
 mkdir -p .cursor/rules
+
+# Creates backend.mdc file with URL reference to NestJS rules
 curl -o .cursor/rules/backend.mdc https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/backend/nestjs-typescript-cursorrules-prompt-file/nestjs-conventions.mdc
+
+# Creates frontend.mdc file with URL reference to Next.js rules
 curl -o .cursor/rules/frontend.mdc https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/frontend/nextjs-react-typescript-cursorrules-prompt-file/next-js-conventions.mdc
-curl -o .cursor/rules/ui.mdc https://raw.githubusercontent.com/sinova-dev/cursor-rules/master/frontend/shadcn-and-tailwind/ui-and-styling-with-shadcn-ui-and-tailwind.mdc
+
 ```
 
 #### Option B: Copy the Rules File
