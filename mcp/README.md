@@ -28,6 +28,42 @@ MCP is a standardized protocol that enables AI assistants to securely connect to
 - ✅ Advanced thinking and reasoning capabilities
 - ✅ Browser automation and web interaction tools
 
+## 📚 Available MCP Servers
+
+### 🔧 **Core Development Tools**
+
+#### **Context7** - Documentation & Library Access
+
+- **Purpose**: Real-time access to comprehensive documentation for thousands of libraries and frameworks
+- **Capabilities**: Latest library documentation, API references, code examples, and best practices
+- **Use Cases**: Research libraries, get up-to-date documentation, find code examples
+
+#### **Sequential Thinking** - Advanced Reasoning
+
+- **Purpose**: Enhanced problem-solving with step-by-step analysis and logical reasoning
+- **Capabilities**: Break down complex problems, systematic debugging, algorithm design
+- **Use Cases**: Complex algorithm design, debugging, architectural decisions
+
+#### **Browser Tools** - Web Automation
+
+- **Purpose**: Advanced browser monitoring, interaction, and auditing capabilities
+- **Capabilities**: Web scraping, form automation, performance/SEO audits, screenshot capture
+- **Use Cases**: Automated testing, data extraction, web research, accessibility audits
+
+### 🎨 **Design & Collaboration Tools**
+
+#### **Framelink Figma MCP** - Design Integration
+
+- **Purpose**: Advanced Figma integration for seamless design-to-code workflows
+- **Capabilities**: Design file access, asset extraction, design token management, component analysis
+- **Use Cases**: Implementing designs, extracting assets, maintaining design consistency
+
+#### **Figma Dev Mode MCP** - Official Figma Integration
+
+- **Purpose**: Official Figma Dev Mode MCP Server for direct design-to-code workflows
+- **Capabilities**: Code generation from frames, design token extraction, Code Connect integration
+- **Use Cases**: Generate React code, extract design tokens, reuse existing components
+
 ## 🛠️ MCP Server Descriptions
 
 ### **Context7** - Documentation & Library Access
@@ -158,15 +194,6 @@ Add to your `mcp.json`:
 - **Hypothesis Testing**: Systematic approach to testing solutions
 - **Reflection & Revision**: Ability to review and refine thinking processes
 - **Problem Decomposition**: Breaking complex problems into smaller, manageable parts
-
-#### **Use Cases**
-
-- **Algorithm Design**: Step-by-step algorithm development and optimization
-- **Debugging**: Systematic approach to identifying and fixing issues
-- **Architecture Planning**: Structured system design and planning
-- **Code Review**: Systematic analysis of code quality and improvements
-- **Learning**: Understanding complex concepts through structured thinking
-- **Performance Analysis**: Breaking down performance issues into components
 
 #### **Usage Examples**
 
@@ -423,15 +450,6 @@ Add to your `mcp.json`:
 - Node.js 18+ installed
 - Internet connection for Figma API access
 - Access to Figma files you want to integrate
-
-#### **Troubleshooting**
-
-If you encounter issues:
-
-1. **Verify API Key**: Ensure your Figma API key is valid and has proper permissions
-2. **Check File Access**: Make sure you have access to the Figma files you're trying to integrate
-3. **Test Connection**: Use the Figma API directly to verify your token works
-4. **Review Permissions**: Ensure your Figma account has necessary permissions for file access
 
 #### **Resources**
 
