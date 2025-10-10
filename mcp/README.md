@@ -64,6 +64,14 @@ MCP is a standardized protocol that enables AI assistants to securely connect to
 - **Capabilities**: Code generation from frames, design token extraction, Code Connect integration
 - **Use Cases**: Generate React code, extract design tokens, reuse existing components
 
+### 🐛 **Debugging & Issue Tracking Tools**
+
+#### **Jam MCP** - Bug Analysis & Issue Tracking
+
+- **Purpose**: Advanced bug analysis and issue tracking with video recordings and user session data
+- **Capabilities**: Video analysis, console logs, network requests, user events, screenshot analysis
+- **Use Cases**: Debug issues, analyze user behavior, track bugs with full context
+
 ## 🛠️ MCP Server Descriptions
 
 ### **Context7** - Documentation & Library Access
@@ -570,6 +578,140 @@ Add to your `mcp.json`:
 - [Figma Desktop App Download](https://www.figma.com/downloads/)
 - [Video Tutorial](https://www.youtube.com/watch?v=yO3Wr7DEWF0)
 
+---
+
+### **Jam MCP** - Bug Analysis & Issue Tracking
+
+**Purpose**: Advanced bug analysis and issue tracking with comprehensive video recordings, user session data, and debugging context for faster issue resolution.
+
+**Key Benefits**:
+
+- Video analysis of user sessions and bug reproduction
+- Console logs and network request monitoring
+- User event tracking and interaction analysis
+- Screenshot analysis for visual debugging
+- Automated bug report generation
+- Customer support integration
+
+**Quick Setup**: No API keys required, works with existing Jam recordings
+
+#### **Complete Setup Process**
+
+##### **Step 1: Record a Jam**
+
+1. **Install Jam Chrome Extension** from [jam.dev](https://jam.dev)
+2. **Hit Record** to capture your screen and voice
+3. **Stop the recording** and get your Jam link
+4. **Share the Jam link** with your AI assistant
+
+##### **Step 2: Configure MCP**
+
+Add to your `mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "jam": {
+      "url": "https://mcp.jam.dev/mcp"
+    }
+  }
+}
+```
+
+##### **Step 3: Authentication**
+
+1. **Paste Jam link** into your AI assistant
+2. **Authenticate with Jam** when prompted
+3. **Approve tool requests** from the agent
+4. **Start debugging** with full context
+
+#### **Advanced Capabilities**
+
+- **Video Analysis**: AI-powered analysis of recorded user sessions
+- **Console Logs**: Access to all console logs and error messages
+- **Network Requests**: Complete network traffic analysis with request/response data
+- **User Events**: Detailed tracking of clicks, inputs, and navigation
+- **Screenshot Analysis**: Visual debugging with screenshot data
+- **Bug Context**: Full reproduction context for faster debugging
+
+#### **Available Tools**
+
+- **`getDetails`**: Quick snapshot of the Jam with metadata
+- **`getConsoleLogs`**: Access to all console logs from the session
+- **`getNetworkRequests`**: Network traffic analysis as JSON
+- **`getScreenshot`**: Screenshot data for visual debugging
+- **`getUserEvents`**: User interaction tracking in plain language
+- **`analyzeVideo`**: AI-powered video analysis for insights and issues
+
+#### **Usage Examples**
+
+```markdown
+# Bug Analysis:
+
+"Review this Jam and analyze the problem, cross-reference with the codebase"
+"Debug this issue using the Jam recording context"
+"Analyze the user behavior in this session"
+
+# Customer Support:
+
+"Analyze these customer Jams and create bug reports"
+"Review user feedback and identify common issues"
+"Generate support tickets from Jam recordings"
+
+# Product Feedback:
+
+"Analyze this product feedback Jam and create implementation plan"
+"Review user experience issues from this recording"
+"Extract feature requests from user sessions"
+
+# Development Workflow:
+
+"Use this Jam to understand the bug reproduction steps"
+"Analyze the console errors from this session"
+"Review network requests to identify API issues"
+```
+
+#### **Integration Examples**
+
+**Product Engineer Workflow**:
+
+```markdown
+"Review this Jam <Jam Link> and analyze the problem, cross-reference it with the existing codebase, and prepare a detailed plan for implementation."
+```
+
+**Product Manager Workflow**:
+
+```markdown
+"Analyze these Jams, perform root-cause analysis, and organize them into efficient work packages to minimize engineers' context switching; create Linear tickets from the analysis."
+```
+
+**Product Designer Workflow**:
+
+```markdown
+"I recorded product feedback in a Jam. Create an implementation plan for the changes requested in this Jam: <Jam Link>"
+```
+
+#### **Prerequisites**
+
+- Jam Chrome extension installed
+- Existing Jam recordings (anyone can record)
+- Internet connection for Jam MCP access
+- Jam account for authentication
+
+#### **Security & Privacy**
+
+- **Data Privacy**: Jam opts out of training on customer data
+- **Access Control**: MCP mirrors existing Jam permissions
+- **Admin Controls**: Use normal admin controls for workspace access
+- **No New Access**: MCP doesn't grant additional permissions
+
+#### **Resources**
+
+- [Official Documentation](https://jam.dev/docs/debug-a-jam/mcp)
+- [Jam Chrome Extension](https://jam.dev)
+- [Setup Guide](https://jam.dev/docs/debug-a-jam/mcp)
+- [Video Tutorial](https://jam.dev/docs/debug-a-jam/mcp)
+
 ## 🚀 Quick Start Guide
 
 ### 0. **Enable Brain 🧠**
@@ -589,6 +731,7 @@ Before setting up MCP servers, ensure you have:
 
 - **Context7**: Documentation access - just add configuration
 - **Sequential Thinking**: Advanced reasoning - just add configuration
+- **Jam MCP**: Bug analysis - just add configuration + Jam recordings
 
 #### **Advanced Setup (Requires Additional Setup)**
 
@@ -633,6 +776,7 @@ export MCP_SERVER_PORT="3845"
 - **Figma API Key**: [Figma Developer Settings](https://www.figma.com/developers/api#authentication)
 - **Context7**: No API key required
 - **Sequential Thinking**: No API key required
+- **Jam MCP**: No API key required (but needs Jam recordings)
 - **Browser Tools**: No API key required (but needs Chrome extension)
 - **Figma Dev Mode MCP**: No API key required (but needs Figma desktop app + Dev Mode access)
 
@@ -657,6 +801,13 @@ export MCP_SERVER_PORT="3845"
 3. Add configuration to `mcp.json`
 4. Verify connection with `#get_code` command
 
+#### **Jam MCP**
+
+1. Install Jam Chrome extension from [jam.dev](https://jam.dev)
+2. Record a Jam session for testing
+3. Add configuration to `mcp.json`
+4. Test with Jam link in AI assistant
+
 ### **6. Verification**
 
 After setup, verify that MCP servers are working:
@@ -671,7 +822,7 @@ After setup, verify that MCP servers are working:
 ### **MCP Server Management**
 
 - **Start with Core Tools**: Begin with Context7 and Sequential Thinking
-- **Add Specialized Tools**: Integrate Browser Tools and Figma as needed
+- **Add Specialized Tools**: Integrate Browser Tools, Figma, and Jam as needed
 - **Monitor Performance**: Keep an eye on server performance and resource usage
 - **Update Regularly**: Keep MCP servers updated for latest features
 
@@ -782,4 +933,4 @@ These MCP configurations are based on:
 
 _Happy coding with enhanced AI capabilities! 🚀_
 
-> **Pro Tip**: Start with Context7 and Sequential Thinking for immediate benefits, then add specialized tools like Browser Tools and Figma integration as your workflow requires them. The key is to integrate these tools gradually into your development process.
+> **Pro Tip**: Start with Context7 and Sequential Thinking for immediate benefits, then add specialized tools like Browser Tools, Figma integration, and Jam for bug analysis as your workflow requires them. The key is to integrate these tools gradually into your development process.
