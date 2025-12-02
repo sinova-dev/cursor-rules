@@ -755,7 +755,7 @@ Add to your `mcp.json`:
 
 1. **Start your Next.js development server**:
    ```bash
-   npm run dev
+   pnpm run dev
    ```
 
 2. **Verify Next.js DevTools MCP automatically connects** to your running instance
@@ -763,7 +763,7 @@ Add to your `mcp.json`:
 ##### **Step 3: Verification**
 
 - **Restart your IDE** after configuration
-- **Ensure Next.js dev server is running** (`npm run dev`)
+- **Ensure Next.js dev server is running** (`pnpm run dev`)
 - **Test with Next.js-specific queries** in your AI assistant
 - **Verify Next.js DevTools MCP tools are available**
 
@@ -820,7 +820,7 @@ Add to your `mcp.json`:
 #### **Prerequisites**
 
 - Next.js 16 or later installed
-- Next.js development server running (`npm run dev`)
+- Next.js development server running (`pnpm run dev`)
 - Node.js 18+ installed
 - MCP-compatible AI coding assistant (Cursor, VS Code, etc.)
 
@@ -830,7 +830,7 @@ If the MCP server is not connecting:
 
 - **Verify Next.js version**: Ensure you're using Next.js v16 or above
 - **Check configuration**: Verify `next-devtools-mcp` is configured in your `mcp.json`
-- **Start dev server**: Ensure your development server is running (`npm run dev`)
+- **Start dev server**: Ensure your development server is running (`pnpm run dev`)
 - **Restart services**: Restart both your development server and IDE
 - **Check MCP status**: Verify your coding agent has loaded the MCP server configuration
 
@@ -918,7 +918,7 @@ export MCP_SERVER_PORT="3845"
 
 1. Ensure your project uses Next.js 16 or later
 2. Add configuration to `mcp.json`
-3. Start your Next.js development server: `npm run dev`
+3. Start your Next.js development server: `pnpm run dev`
 4. Verify MCP automatically connects to your running instance
 
 #### **Browser Tools (Complex Setup)**
