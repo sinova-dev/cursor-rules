@@ -25,6 +25,10 @@
     },
     "jam": {
       "url": "https://mcp.jam.dev/mcp"
+    },
+    "next-devtools": {
+      "command": "npx",
+      "args": ["-y", "next-devtools-mcp@latest"]
     }
   }
 }

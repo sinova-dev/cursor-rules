@@ -44,6 +44,12 @@ MCP is a standardized protocol that enables AI assistants to securely connect to
 - **Capabilities**: Break down complex problems, systematic debugging, algorithm design
 - **Use Cases**: Complex algorithm design, debugging, architectural decisions
 
+#### **Next.js DevTools MCP** - Next.js Development Integration
+
+- **Purpose**: Real-time integration with Next.js 16+ development server for live debugging and development
+- **Capabilities**: Error detection, live state queries, page metadata, Server Actions inspection, Next.js documentation
+- **Use Cases**: Debug Next.js apps, analyze errors, query application state, access Next.js best practices
+
 #### **Browser Tools** - Web Automation
 
 - **Purpose**: Advanced browser monitoring, interaction, and auditing capabilities
@@ -712,6 +718,130 @@ Add to your `mcp.json`:
 - [Setup Guide](https://jam.dev/docs/debug-a-jam/mcp)
 - [Video Tutorial](https://jam.dev/docs/debug-a-jam/mcp)
 
+### **Next.js DevTools MCP** - Next.js Development Integration
+
+**Purpose**: Real-time integration with Next.js 16+ development server, providing AI assistants with live access to application runtime, errors, state, and development tools for enhanced debugging and development workflows.
+
+**Key Benefits**:
+
+- Real-time error detection and analysis (build, runtime, and type errors)
+- Live application state queries and runtime information access
+- Page metadata and component hierarchy inspection
+- Server Actions analysis and development logs access
+- Next.js documentation and best practices integration
+- Automated migration and upgrade assistance
+- Browser testing integration with Playwright MCP
+
+**Quick Setup**: Requires Next.js 16+ and running development server
+
+#### **Complete Setup Process**
+
+##### **Step 1: Configuration**
+
+Add to your `mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "next-devtools": {
+      "command": "npx",
+      "args": ["-y", "next-devtools-mcp@latest"]
+    }
+  }
+}
+```
+
+##### **Step 2: Start Development Server**
+
+1. **Start your Next.js development server**:
+   ```bash
+   pnpm run dev
+   ```
+
+2. **Verify Next.js DevTools MCP automatically connects** to your running instance
+
+##### **Step 3: Verification**
+
+- **Restart your IDE** after configuration
+- **Ensure Next.js dev server is running** (`pnpm run dev`)
+- **Test with Next.js-specific queries** in your AI assistant
+- **Verify Next.js DevTools MCP tools are available**
+
+#### **Advanced Capabilities**
+
+- **Error Detection**: Real-time access to build errors, runtime errors, and TypeScript type errors
+- **Live State Queries**: Query application state and runtime information in real-time
+- **Page Metadata**: Access page routes, components, and rendering details
+- **Server Actions Inspection**: Analyze Server Actions and component hierarchies
+- **Development Logs**: Access development server logs and console output
+- **Next.js Knowledge Base**: Query comprehensive Next.js documentation and best practices
+- **Migration Tools**: Automated helpers for upgrading to Next.js 16 with codemods
+- **Cache Components Guide**: Setup and configuration assistance for Cache Components
+- **Browser Testing**: Playwright MCP integration for verifying pages in the browser
+
+#### **Usage Examples**
+
+```markdown
+# Error Detection and Debugging:
+
+"What errors are currently in my application?"
+"Analyze the build errors and suggest fixes"
+"Check for runtime errors in my Next.js app"
+"Review TypeScript type errors and resolve them"
+
+# Application State and Runtime:
+
+"Query the current state of my application"
+"Show me the page routes in my Next.js app"
+"Inspect the component hierarchy for this page"
+"Analyze the Server Actions in my application"
+
+# Development Workflow:
+
+"Review the development logs for issues"
+"Check the rendering details for this page"
+"Analyze the component structure and suggest optimizations"
+"Help me understand the current application state"
+
+# Next.js Best Practices:
+
+"Query Next.js documentation for this feature"
+"Show me best practices for Server Actions"
+"Help me set up Cache Components"
+"Guide me through Next.js 16 migration"
+
+# Browser Testing:
+
+"Test this page in the browser using Playwright"
+"Verify the page renders correctly"
+"Check for accessibility issues on this route"
+```
+
+#### **Prerequisites**
+
+- Next.js 16 or later installed
+- Next.js development server running (`pnpm run dev`)
+- Node.js 18+ installed
+- MCP-compatible AI coding assistant (Cursor, VS Code, etc.)
+
+#### **Troubleshooting**
+
+If the MCP server is not connecting:
+
+- **Verify Next.js version**: Ensure you're using Next.js v16 or above
+- **Check configuration**: Verify `next-devtools-mcp` is configured in your `mcp.json`
+- **Start dev server**: Ensure your development server is running (`pnpm run dev`)
+- **Restart services**: Restart both your development server and IDE
+- **Check MCP status**: Verify your coding agent has loaded the MCP server configuration
+
+#### **Resources**
+
+- [Official Next.js MCP Documentation](https://nextjs.org/docs/app/guides/mcp)
+- [Next.js DevTools MCP GitHub Repository](https://github.com/vercel/next.js/tree/canary/packages/next-devtools-mcp)
+- [Next.js 16 Documentation](https://nextjs.org/docs)
+
+---
+
 ## 🚀 Quick Start Guide
 
 ### 0. **Enable Brain 🧠**
@@ -731,6 +861,7 @@ Before setting up MCP servers, ensure you have:
 
 - **Context7**: Documentation access - just add configuration
 - **Sequential Thinking**: Advanced reasoning - just add configuration
+- **Next.js DevTools MCP**: Next.js development integration - just add configuration + running dev server
 - **Jam MCP**: Bug analysis - just add configuration + Jam recordings
 
 #### **Advanced Setup (Requires Additional Setup)**
@@ -776,11 +907,19 @@ export MCP_SERVER_PORT="3845"
 - **Figma API Key**: [Figma Developer Settings](https://www.figma.com/developers/api#authentication)
 - **Context7**: No API key required
 - **Sequential Thinking**: No API key required
+- **Next.js DevTools MCP**: No API key required (but needs Next.js 16+ and running dev server)
 - **Jam MCP**: No API key required (but needs Jam recordings)
 - **Browser Tools**: No API key required (but needs Chrome extension)
 - **Figma Dev Mode MCP**: No API key required (but needs Figma desktop app + Dev Mode access)
 
 ### **5. Server-Specific Setup**
+
+#### **Next.js DevTools MCP**
+
+1. Ensure your project uses Next.js 16 or later
+2. Add configuration to `mcp.json`
+3. Start your Next.js development server: `pnpm run dev`
+4. Verify MCP automatically connects to your running instance
 
 #### **Browser Tools (Complex Setup)**
 
