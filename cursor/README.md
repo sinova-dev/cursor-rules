@@ -269,8 +269,8 @@ With **Model Context Protocol (MCP)**, Cursor can connect to external tools—do
 
 For full setup instructions, environment variables, and more servers, open `mcp/README.md` in this repo and follow the Quick Start section.
 
-[Cursor UPDATE: Code Editor just got EVEN BETTER! (MCP Servers, Codebase Understanding, Fusion Model)](https://youtu.be/2vJobjx1p6w?si=Ypw_7QULnnRvW3yz).
-[Those MCP totally 10x my Cursor workflow…)](https://youtu.be/oAoigBWLZgE?si=hrgOersN9QTaYRni).
+- [Cursor UPDATE: Code Editor just got EVEN BETTER! (MCP Servers, Codebase Understanding, Fusion Model)](https://youtu.be/2vJobjx1p6w?si=Ypw_7QULnnRvW3yz)
+- [Those MCP totally 10x my Cursor workflow…](https://youtu.be/oAoigBWLZgE?si=hrgOersN9QTaYRni)
 
 ---
 
@@ -311,6 +311,9 @@ Here’s a quick pattern you can use when building a feature with Cursor:
     - Official docs: [Cursor Documentation](https://docs.cursor.com)
     - Look for sections like _Docs_, _FAQ_, or _Changelog_ on `cursor.com` for the latest features and setup guides.
   - **Community learning hub**: [Cursor Directory – Learn](https://cursor.directory/learn) – curated videos and guides about Cursor, rules, MCP, and workflows.
+  - **Articles & Written Guides**:
+    - [Coding with Cursor: a Beginner’s Guide](https://www.siddharthbharath.com/coding-with-cursor-beginners-guide/) – in-depth overview of Ask/Agent/Edit modes, context, `.cursorignore`, and real workflows.
+    - [Cursor AI: A Guide With 10 Practical Examples](https://www.datacamp.com/tutorial/cursor-ai-code-editor/?utm_source=openai) – practical examples of autocomplete, multi-line edits, rewrites, and chat features.
 
 - **Video Introductions & Deep Dives**
 
