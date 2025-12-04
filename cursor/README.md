@@ -245,29 +245,9 @@ build/
 
 With **Model Context Protocol (MCP)**, Cursor can connect to external tools—documentation, browsers, design systems, and bug trackers—turning your AI into a full strike team, not just a lone Jedi.
 
-- **Project‑Local MCP Setup**:
+- **Project‑Local MCP Setup**: Define project tools in `.cursor/mcp.json` so they only apply to that repo. Global/editor‑wide tools can be managed from **Settings → Cursor → MCP / Tools**.
 
-  - Define project tools in `.cursor/mcp.json` so they only apply to that repo.
-  - Global/editor‑wide tools can be managed from **Settings → Cursor → MCP / Tools**.
-
-- **Useful MCP Servers from This Repo (Short List)**:
-  - **Context7**: fetch up‑to‑date docs and examples for libraries and frameworks without leaving Cursor.
-    - More info: see `mcp/README.md` → **Context7**.
-    - Video: [Context7 MCP quick intro](https://www.youtube.com/watch?v=qZfENAPMnyo).
-  - **Sequential Thinking**: step‑by‑step reasoning for hard bugs, algorithms, and architecture decisions.
-    - More info: `mcp/README.md` → **Sequential Thinking**.
-    - Video: [Sequential Thinking MCP walkthrough](https://www.youtube.com/watch?v=RCFe1L9qm3E).
-  - **Browser Tools**: drive a real browser for audits, screenshots, and end‑to‑end debugging.
-    - More info & setup: `mcp/README.md` → **Browser Tools**.
-    - Video: [Browser Tools MCP demo](https://www.loom.com/share/88f493eb9c114d3b901ea97e9251e5e6?sid=241311b6-b2a7-4b2d-9b6c-70c0f64f8062).
-  - **Figma MCPs (Framelink & Dev Mode)**: pull real designs and tokens from Figma, then turn frames into code.
-    - More info: `mcp/README.md` → **Framelink Figma MCP** and **Figma Dev Mode MCP**.
-    - Videos: [Framelink / Figma MCP overview](https://www.youtube.com/watch?v=6G9yb-LrEqg), [Figma Dev Mode MCP guide](https://www.youtube.com/watch?v=yO3Wr7DEWF0).
-  - **Jam MCP**: debug with user recordings, console logs, and network traces from Jam.
-    - More info: `mcp/README.md` → **Jam MCP**.
-    - Video: [Jam MCP debugging guide](https://jam.dev/docs/debug-a-jam/mcp).
-
-For full setup instructions, environment variables, and more servers, open `mcp/README.md` in this repo and follow the Quick Start section.
+- **Full MCP Guide**: For complete setup instructions, available MCP servers (Context7, Sequential Thinking, Browser Tools, Figma integrations, Jam, and more), environment variables, and video tutorials, see the comprehensive guide in [`mcp/README.md`](../mcp/README.md) in this repository.
 
 - [Cursor UPDATE: Code Editor just got EVEN BETTER! (MCP Servers, Codebase Understanding, Fusion Model)](https://youtu.be/2vJobjx1p6w?si=Ypw_7QULnnRvW3yz)
 - [Those MCP totally 10x my Cursor workflow…](https://youtu.be/oAoigBWLZgE?si=hrgOersN9QTaYRni)
