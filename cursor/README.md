@@ -1,4 +1,6 @@
-## Cursor: A New Hope – Star Wars Guide for New Developers 🌌
+# Cursor: A New Hope – Star Wars Guide for New Developers 🌌
+
+> **Star Wars–style beginner’s guide to using Cursor, MCP, and Cursor Rules in a consistent, professional way.**
 
 Welcome, young Padawan. This is your holocron 📜 for learning **Cursor**, an AI-powered code editor that helps you build software faster, with fewer bugs, and far less time spent fighting the dark side of boilerplate.
 
@@ -8,31 +10,30 @@ Under the hood, Cursor is a **fork of VS Code**, so most of your muscle memory, 
 
 ---
 
-### The Main Purpose of Cursor (What the Jedi Council Intended)
+## 🎯 The Main Purpose of Cursor (What the Jedi Council Intended)
 
-- **Primary Mission**:  
-  Cursor combines a modern editor (similar to VS Code) with deeply integrated AI so you can read and understand unfamiliar codebases faster, generate and refactor code safely, run multi-file edits while staying within your project’s rules, and chat with your codebase as if it were a knowledgeable master.
+- **Primary Mission**: Cursor combines a modern editor (similar to VS Code) with deeply integrated AI so you can read and understand unfamiliar codebases faster, generate and refactor code safely, run multi-file edits while staying within your project’s rules, and chat with your codebase as if it were a knowledgeable master.
 
 - **Key Capabilities (Your Jedi Powers)**:
-  - **Chat with Your Codebase** – ask questions about files, flows, and architecture, and get answers in plain language.
-  - **Generate & Rewrite Code** – create new functions, tests, or components and clean up existing code with targeted prompts.
-  - **Smart Autocomplete** – let Cursor finish small blocks or whole functions based on what you’ve just written.
-  - **Repo‑Aware Refactors** – make changes that respect existing patterns, project rules, and architecture across multiple files.
-  - **Diff‑First Workflow** – review every AI suggestion as a diff before applying it, so you stay fully in control of the codebase.
+  - **Chat with Your Codebase**: ask questions about files, flows, and architecture, and get answers in plain language.
+  - **Generate & Rewrite Code**: create new functions, tests, or components and clean up existing code with targeted prompts.
+  - **Smart Autocomplete**: let Cursor finish small blocks or whole functions based on what you’ve just written.
+  - **Repo‑Aware Refactors**: make changes that respect existing patterns, project rules, and architecture across multiple files.
+  - **Diff‑First Workflow**: review every AI suggestion as a diff before applying it, so you stay fully in control of the codebase.
 
 ---
 
-### Advantages – The Light Side of Cursor ⭐
+## ⭐ Advantages – The Light Side of Cursor
 
-- **Speed of a Hyperspace Jump** – rapid prototyping, code generation, and refactoring with most boilerplate handled for you.
-- **Deep Code Understanding** – ask natural-language questions about services, flows, and errors, and get quick summaries.
-- **Consistency with the Jedi Code** – `.cursorrules` and project prompts help enforce your architecture and best practices.
-- **Diff‑Driven Changes** – every AI suggestion appears as a diff so you can keep quality and style under control.
-- **Great for Onboarding** – new devs can explore the codebase by asking questions instead of hunting through files.
+- **Speed of a Hyperspace Jump**: rapid prototyping, code generation, and refactoring with most boilerplate handled for you.
+- **Deep Code Understanding**: ask natural-language questions about services, flows, and errors, and get quick summaries.
+- **Consistency with the Jedi Code**: `.cursorrules` and project prompts help enforce your architecture and best practices.
+- **Diff‑Driven Changes**: every AI suggestion appears as a diff so you can keep quality and style under control.
+- **Great for Onboarding**: new devs can explore the codebase by asking questions instead of hunting through files.
 
 ---
 
-### Cursor Modes – Your Lightsaber Forms
+## 🧰 Cursor Modes – Your Lightsaber Forms
 
 Cursor has several primary “forms” of interaction with AI. Choosing the right one is like choosing the right stance in a duel.
 
@@ -80,7 +81,7 @@ Cursor has several primary “forms” of interaction with AI. Choosing the righ
 
 ---
 
-### Essential Commands & Settings – Where the Controls Live
+## 🧭 Essential Commands & Settings – Where the Controls Live
 
 - **Open AI Chat / Ask Mode**
 
@@ -109,7 +110,7 @@ Treat these menus like the control panels in your starfighter: once you know whe
 
 ---
 
-### Getting Started – Your Padawan Training Path
+## 🚀 Getting Started – Your Padawan Training Path
 
 Follow this path to become productive with Cursor quickly:
 
@@ -149,7 +150,7 @@ Follow this path to become productive with Cursor quickly:
 
 ---
 
-### Cursor Rules – Your Jedi Code for the AI 🧱
+## 📜 Cursor Rules – Your Jedi Code for the AI 🧱
 
 To keep your AI co‑pilot on the Light Side, you need a written **Jedi Code** for your project: this is what **Cursor Rules** are.
 
@@ -193,7 +194,7 @@ For full details and copy‑pasteable imports, see the main guide in `README.md`
 
 ---
 
-### Context, `.cursorignore`, and the Art of Focus
+## 🎯 Context, `.cursorignore`, and the Art of Focus
 
 Cursor is only as strong as the **context** you give it. Think of context as the holocron shards you hand to the AI—too many random shards, and the vision becomes blurry.
 
@@ -228,51 +229,41 @@ build/
 
 ---
 
-### Tactical Tips – Fighting Bugs Like a Jedi
+## 🛡️ Tactical Tips – Fighting Bugs Like a Jedi
 
-- **Ask for Rationale, Not Just Code**
+- **Ask for Rationale, Not Just Code**: ask Cursor to explain why it made changes, not only what it changed (for example: _“Refactor this function to follow early-return error handling and explain each change.”_).
 
-  - Example: _“Refactor this function to follow early-return error handling and explain each change.”_
+- **Constrain the Scope**: specify the files, modules, or functions to operate on, and avoid “rewrite the whole repo” style prompts—this is how Death Stars are accidentally created.
 
-- **Constrain the Scope**
+- **Iterate in Small Steps**: use short, focused prompts and apply changes incrementally, combining them with your normal review process and CI pipeline.
 
-  - Specify files, modules, or functions to operate on.
-  - Avoid “rewrite the whole repo” style prompts—this is how Death Stars are accidentally created.
-
-- **Iterate in Small Steps**
-
-  - Use short, focused prompts and apply changes incrementally.
-  - Combine with your normal review process and CI pipeline.
-
-- **Keep the Project Rules Up to Date**
-  - Maintain `.cursorrules` and architecture docs so Cursor has accurate guidance.
-  - Treat those prompts like canonical Jedi texts.
+- **Keep the Project Rules Up to Date**: maintain `.cursorrules` and architecture docs so Cursor has accurate guidance, and treat those prompts like canonical Jedi texts.
 
 ---
 
-### MCP and Advanced Workflows – Calling the Droid Army
+## 🤖 MCP and Advanced Workflows – Calling the Droid Army
 
 With **Model Context Protocol (MCP)**, Cursor can connect to external tools—documentation, browsers, design systems, and bug trackers—turning your AI into a full strike team, not just a lone Jedi.
 
-- **Project‑Local MCP Setup**
+- **Project‑Local MCP Setup**:
 
   - Define project tools in `.cursor/mcp.json` so they only apply to that repo.
   - Global/editor‑wide tools can be managed from **Settings → Cursor → MCP / Tools**.
 
-- **Useful MCP Servers from This Repo (Short List)**
-  - **Context7** – fetch up‑to‑date docs and examples for libraries and frameworks without leaving Cursor.
+- **Useful MCP Servers from This Repo (Short List)**:
+  - **Context7**: fetch up‑to‑date docs and examples for libraries and frameworks without leaving Cursor.
     - More info: see `mcp/README.md` → **Context7**.
     - Video: [Context7 MCP quick intro](https://www.youtube.com/watch?v=qZfENAPMnyo).
-  - **Sequential Thinking** – step‑by‑step reasoning for hard bugs, algorithms, and architecture decisions.
+  - **Sequential Thinking**: step‑by‑step reasoning for hard bugs, algorithms, and architecture decisions.
     - More info: `mcp/README.md` → **Sequential Thinking**.
     - Video: [Sequential Thinking MCP walkthrough](https://www.youtube.com/watch?v=RCFe1L9qm3E).
-  - **Browser Tools** – drive a real browser for audits, screenshots, and end‑to‑end debugging.
+  - **Browser Tools**: drive a real browser for audits, screenshots, and end‑to‑end debugging.
     - More info & setup: `mcp/README.md` → **Browser Tools**.
     - Video: [Browser Tools MCP demo](https://www.loom.com/share/88f493eb9c114d3b901ea97e9251e5e6?sid=241311b6-b2a7-4b2d-9b6c-70c0f64f8062).
-  - **Figma MCPs (Framelink & Dev Mode)** – pull real designs and tokens from Figma, then turn frames into code.
+  - **Figma MCPs (Framelink & Dev Mode)**: pull real designs and tokens from Figma, then turn frames into code.
     - More info: `mcp/README.md` → **Framelink Figma MCP** and **Figma Dev Mode MCP**.
     - Videos: [Framelink / Figma MCP overview](https://www.youtube.com/watch?v=6G9yb-LrEqg), [Figma Dev Mode MCP guide](https://www.youtube.com/watch?v=yO3Wr7DEWF0).
-  - **Jam MCP** – debug with user recordings, console logs, and network traces from Jam.
+  - **Jam MCP**: debug with user recordings, console logs, and network traces from Jam.
     - More info: `mcp/README.md` → **Jam MCP**.
     - Video: [Jam MCP debugging guide](https://jam.dev/docs/debug-a-jam/mcp).
 
@@ -283,7 +274,7 @@ For full setup instructions, environment variables, and more servers, open `mcp/
 
 ---
 
-### A Simple Real‑World Flight Plan
+## ✈️ A Simple Real‑World Flight Plan
 
 Here’s a quick pattern you can use when building a feature with Cursor:
 
@@ -311,7 +302,7 @@ Here’s a quick pattern you can use when building a feature with Cursor:
 
 ---
 
-### Recommended Resources & Videos Holo‑Records 📡
+## 🎥 Recommended Resources & Videos Holo‑Records 📡
 
 - **Official & General Resources**
 
@@ -335,7 +326,7 @@ Here’s a quick pattern you can use when building a feature with Cursor:
 
 ---
 
-### Final Words from the Council
+## 🏁 Final Words from the Council
 
 Cursor is a powerful ally in your development journey, but remember that the **Force** is your engineering judgment, not the tool. Let Cursor amplify the Light Side practices you already follow—testing, clean architecture, thoughtful reviews—instead of tempting you to bypass them. When the path ahead is cloudy, pause like a Jedi Master: read the code, run the tests, talk with your squad, and then decide.
 
