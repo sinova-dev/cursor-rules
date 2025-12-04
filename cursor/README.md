@@ -75,9 +75,9 @@ Cursor has several primary “forms” of interaction with AI. Choosing the righ
 - “I want to build or change something substantial” → **Agent mode**
 - “I want a tiny, precise edit” → **Edit mode** (or scoped Agent request)
 
-[Cursor AI for Beginners: A Complete Guide](https://youtu.be/YG459bD8qmw?si=skjHezytt4crDIIH).
-[Cursor AI tutorial for beginners](https://youtu.be/gqUQbjsYZLQ?si=Mm4ea1A9unvyOt2N).
-[Cursor Agent: 10 Pro Tips!](https://youtu.be/WVeYLlKOWc0?si=rBHcJFpPDD3F2JgR).
+- [Cursor AI for Beginners: A Complete Guide](https://youtu.be/YG459bD8qmw?si=skjHezytt4crDIIH)
+- [Cursor AI tutorial for beginners](https://youtu.be/gqUQbjsYZLQ?si=Mm4ea1A9unvyOt2N)
+- [Cursor Agent: 10 Pro Tips!](https://youtu.be/WVeYLlKOWc0?si=rBHcJFpPDD3F2JgR)
 
 ---
 
@@ -145,8 +145,8 @@ Follow this path to become productive with Cursor quickly:
    - Run tests and linters after AI-driven refactors.
    - Keep git commits small and meaningful, even when AI generated the code.
 
-[I spent 400+ hours in Cursor, here’s what I learned](https://youtu.be/gYLNxUxVomY?si=EcQjRv__YCq_097o).
-[Cursor AI Tutorial for Beginners (How I Code 159% Faster)](https://youtu.be/yk9lXobJ95E?si=Cn4YCUNlFJJD7KYX).
+- [I spent 400+ hours in Cursor, here’s what I learned](https://youtu.be/gYLNxUxVomY?si=EcQjRv__YCq_097o)
+- [Cursor AI Tutorial for Beginners (How I Code 159% Faster)](https://youtu.be/yk9lXobJ95E?si=Cn4YCUNlFJJD7KYX)
 
 ---
 
@@ -189,8 +189,8 @@ your-project/
 
 For full details and copy‑pasteable imports, see the main guide in `README.md` of this repository.
 
-[Cursor Just Got an Upgrade! Here’s What You Need to Know About Cursor Rules](https://youtu.be/1AxTVGxbkPs?si=sUBpMPTZX5cI9eNL).
-[Cursor Rules guide for lazy devs. Setup rules in minutes with this quick tutorial!](https://youtu.be/FpJ48a5S5lU?si=oWQI92nv0OXNKoNL).
+- [Cursor Just Got an Upgrade! Here’s What You Need to Know About Cursor Rules](https://youtu.be/1AxTVGxbkPs?si=sUBpMPTZX5cI9eNL)
+- [Cursor Rules guide for lazy devs. Setup rules in minutes with this quick tutorial!](https://youtu.be/FpJ48a5S5lU?si=oWQI92nv0OXNKoNL)
 
 ---
 
