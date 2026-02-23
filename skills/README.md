@@ -28,6 +28,7 @@ These skills are available under `skills/`:
 | Skill | Description |
 |-------|-------------|
 | **vercel-react-best-practices** | React and Next.js performance optimization (waterfalls, bundle size, server/client patterns, re-renders). Use when writing or refactoring React/Next.js code. |
+| **nextjs-best-practices** | Next.js App Router principles: Server vs Client components, data fetching, routing, API routes, caching, server actions. Use for App Router structure and patterns. |
 | **nestjs-expert** | NestJS conventions and patterns. Use for backend or NestJS-related tasks. |
 | **prisma-expert** | Prisma ORM usage and best practices. Use when working with databases or Prisma. |
 | **tailwindcss-development** | Tailwind CSS usage and patterns. Use for styling and UI work. |
