@@ -16,13 +16,11 @@ Intake answers, date started, project specifics.
 | 1 | one-page-marketing | pending | MARKETING.md, CUSTOMER.md | |
 | 2 | storybrand-messaging | pending | POSITIONING.md, WEBSITE.md | |
 | 3 | made-to-stick | pending | POSITIONING.md, WEBSITE.md | |
-| 4 | top-design | pending | DESIGN.md | |
-| 5 | web-typography | pending | DESIGN.md | |
-| 6 | refactoring-ui | pending | DESIGN.md | |
-| 7 | ux-heuristics | pending | DESIGN.md | |
-| 8 | cro-methodology | pending | WEBSITE.md, EXPERIMENTS.md | |
-| 9 | scorecard-marketing | pending | WEBSITE.md, MARKETING.md | |
-| 10 | steve-jobs-design-review | pending | WEBSITE.md | |
+| 4 | web-typography | pending | DESIGN.md | |
+| 5 | refactoring-ui | pending | DESIGN.md | |
+| 6 | ux-heuristics | pending | DESIGN.md | |
+| 7 | cro-methodology | pending | WEBSITE.md, EXPERIMENTS.md | |
+| 8 | steve-jobs-design-review | pending | WEBSITE.md | |
 Statuses: pending · in-progress · awaiting-evidence · done · deferred: <reason> · skipped: <reason>
 
 ## Key Decisions

@@ -22,7 +22,6 @@ Intake answers, date started, project specifics.
 | 5. Empowered team | inspired-product | pending | PRODUCT.md | |
 | 6. One metric that matters | lean-analytics | pending | METRICS.md | |
 | 7. Microinteractions | microinteractions | pending | DESIGN.md | |
-| 8. Intrinsic motivation | drive-motivation | pending | PRODUCT.md | |
 Statuses: pending · in-progress · awaiting-evidence · done · deferred: <reason> · skipped: <reason>
 
 ## Key Decisions
@@ -35,7 +34,7 @@ Statuses: pending · in-progress · awaiting-evidence · done · deferred: <reas
 
 ## docs/METRICS.md
 
-Created in Phase 6 (lean-analytics). Creates: improve-business, grow-app.
+Created in Phase 6 (lean-analytics). Creates: grow-app.
 
 ```markdown
 # Metrics
@@ -60,7 +59,7 @@ OMTM · counter-metric · why now.
 
 ## docs/PRODUCT.md
 
-Extended across Phases 1, 2, 3, 5, and 8; create it here if the project has no PRODUCT.md yet. Creates: create-app, create-business. Extends: grow-app, improve-app.
+Extended across Phases 1, 2, 3, and 5; create it here if the project has no PRODUCT.md yet. Creates: create-app. Extends: grow-app, improve-app.
 
 ```markdown
 # Product

@@ -56,7 +56,7 @@ Ask these before creating the tracker:
 1. **What is the app, and what job did users hire it to do — in their words?** (Anchors Phase 1; gates every later phase.)
 2. **Where does it feel roughest** — confusing screens, dead interactions, amateur UI, weak copy, pushy upgrade prompts, or sluggishness? (Sets the entry phase and front-loads a fix phase.)
 3. **What evidence do you have** — recordings, support tickets, reviews, funnel drop-off, usage analytics? ("None" routes to the optional continuous-discovery phase.)
-4. **What platform(s) does the app run on** — web, native iOS, both? (Gates Phase 8 and optional ios-hig-design; no browser surface with smooth native perf skips Phase 8.)
+4. **What platform(s) does the app run on** — web, native iOS, both? (Gates Phase 8 high-perf-browser when a browser surface exists; skip Phase 8 when there is no web UI or performance is already smooth.)
 5. **Which in-app surfaces sell or upsell** — paywall, upgrade prompt, trial nudge, badges — and are the scarcity and social-proof claims true today? (Scopes Phase 7 and the honesty guardrail.)
 6. **Which flow leaks the most users or draws the most tickets?** (Targets Phases 2-3, 5, and 8.)
 7. **Do you already have positioning, design, or customer docs** (POSITIONING.md, DESIGN.md, CUSTOMER.md)? (Phases 1, 4, 6, 7 build on them.)
@@ -199,7 +199,6 @@ the plan. Done when `docs/IMPROVE-APP-PLAN.md` exists with every phase statused 
 
 | Skill | Add when | Artifact |
 |---|---|---|
-| ios-hig-design | the app ships natively on iOS | Extends docs/DESIGN.md |
 | lean-ux | a risky fix deserves a cheap experiment before a full build | Extends docs/EXPERIMENTS.md |
 | continuous-discovery | improvement ideas come from opinions, not weekly user contact | Extends docs/CUSTOMER.md |
 | improve-retention | first-run activation friction shows up in the audits (full retention engine: grow-app) | Extends docs/PRODUCT.md |

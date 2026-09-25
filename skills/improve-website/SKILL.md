@@ -247,7 +247,6 @@ the checklist, and destructive actions offer undo.
 |---|---|---|
 | influence-psychology | objection points need ethical persuasion assets (social proof, authority, real scarcity) | Extends docs/WEBSITE.md `## Conversion Elements` |
 | microinteractions | interactions feel dead or unresponsive | Extends docs/DESIGN.md `## Microinteraction Inventory` |
-| top-design | the redesign warrants a signature moment, not just fixes | Extends docs/DESIGN.md `## Design Direction` |
 | steve-jobs-design-review | before relaunch, for a brutal end-to-end verdict | Extends docs/WEBSITE.md `## Audit Findings` |
 
 Optional phases follow the same operating rules; insert where the Add-when condition first becomes true.

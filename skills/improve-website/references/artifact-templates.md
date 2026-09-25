@@ -92,7 +92,7 @@ Spacing scale · color palette (shades, tinted grays) · shadows.
 
 ## docs/EXPERIMENTS.md
 
-Every test we run, with pre-committed criteria. Creates: create-business, create-app. Extends: improve-website, grow-website, grow-app, grow-business.
+Every test we run, with pre-committed criteria. Creates: create-app. Extends: improve-website, grow-website, grow-app.
 
 ```markdown
 # Experiments

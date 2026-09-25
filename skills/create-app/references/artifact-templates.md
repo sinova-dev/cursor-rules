@@ -8,7 +8,7 @@ Skeletons this metaskill creates in the user's docs/ folder. Extend-only artifac
 # Create an App Plan
 
 ## Context
-Intake answers, date started, project specifics. Note whether shipping native iOS (gates Phase 8).
+Intake answers, date started, project specifics.
 
 ## Phase Status
 | Phase | Skill | Status | Artifact | Date |
@@ -20,9 +20,8 @@ Intake answers, date started, project specifics. Note whether shipping native iO
 | 5 | clean-code | pending | TESTING.md | |
 | 6 | pragmatic-programmer | pending | TESTING.md, TECH-DEBT.md | |
 | 7 | system-design | pending | ARCHITECTURE.md | |
-| 8 | ios-hig-design | pending | DESIGN.md | |
-| 9 | 37signals-way | pending | PRODUCT.md, STRATEGY.md | |
-| 10 | software-design-philosophy | pending | TECH-DEBT.md, ARCHITECTURE.md | |
+| 8 | 37signals-way | pending | PRODUCT.md, STRATEGY.md | |
+| 9 | software-design-philosophy | pending | TECH-DEBT.md, ARCHITECTURE.md | |
 Statuses: pending · in-progress · awaiting-evidence · done · deferred: <reason> · skipped: <reason>
 
 ## Key Decisions

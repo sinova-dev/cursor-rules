@@ -1,6 +1,6 @@
 ---
 name: create-website
-description: 'Guided journey from a blank page to a live, high-converting website, built message-first, then design, then conversion. Orchestrates ten skills phase by phase - one-page-marketing, storybrand-messaging, made-to-stick, top-design, web-typography, refactoring-ui, ux-heuristics, cro-methodology, scorecard-marketing, steve-jobs-design-review - asking the user questions at every decision point and recording results in the project docs/ folder (POSITIONING.md, WEBSITE.md, DESIGN.md, CREATE-WEBSITE-PLAN.md) so the journey resumes across sessions. Use when the user wants to build a new website or landing page from scratch, turn a validated idea into a page that converts, or says ''build me a landing page for my SaaS''. Site already exists: use improve-website to fix conversion/UX or grow-website for more traffic; building a software product, not a marketing site: use create-app; no positioning yet: run create-business first or the positioning phase here. For one framework in isolation, invoke that skill directly.'
+description: 'Guided journey from a blank page to a live, high-converting website, built message-first, then design, then conversion. Orchestrates eight skills phase by phase - one-page-marketing, storybrand-messaging, made-to-stick, web-typography, refactoring-ui, ux-heuristics, cro-methodology, steve-jobs-design-review - asking the user questions at every decision point and recording results in the project docs/ folder (POSITIONING.md, WEBSITE.md, DESIGN.md, CREATE-WEBSITE-PLAN.md) so the journey resumes across sessions. Use when the user wants to build a new website or landing page from scratch, turn a validated idea into a page that converts, or says ''build me a landing page for my SaaS''. Site already exists: use improve-website to fix conversion/UX or grow-website for more traffic; building a software product, not a marketing site: use create-app; no positioning yet: run Phase 2 here or add the obviously-awesome optional phase. For one framework in isolation, invoke that skill directly.'
 license: MIT
 metadata:
   author: wondelai
@@ -9,7 +9,7 @@ metadata:
 
 # Create a Website
 
-A blank page becomes a live, high-converting website through ten phases run in one dependency-respecting order: message, then design, then conversion, then a brutal review. This journey is interactive — the agent asks before every decision and never designs before the message is settled — and resumable, because every decision and artifact lives in the project's `docs/` folder. You drive the phases; the constituent skills carry the method.
+A blank page becomes a live, high-converting website through eight phases run in one dependency-respecting order: message, then design, then conversion, then a brutal review. This journey is interactive — the agent asks before every decision and never designs before the message is settled — and resumable, because every decision and artifact lives in the project's `docs/` folder. You drive the phases; the constituent skills carry the method.
 
 ## Core Principle
 
@@ -22,13 +22,11 @@ A blank page becomes a live, high-converting website through ten phases run in o
 | 1 | one-page-marketing | Who is this for, and what is the site's one job? | Creates docs/MARKETING.md; extends docs/CUSTOMER.md |
 | 2 | storybrand-messaging | What do we say, with the customer as hero? | Creates docs/POSITIONING.md, docs/WEBSITE.md |
 | 3 | made-to-stick | How do we make the message memorable? | Extends docs/POSITIONING.md, docs/WEBSITE.md |
-| 4 | top-design | What makes this page unforgettable to look at? | Creates docs/DESIGN.md |
-| 5 | web-typography | Is the type readable as well as dramatic? | Extends docs/DESIGN.md |
-| 6 | refactoring-ui | Is the design consistent and systematic? | Extends docs/DESIGN.md |
-| 7 | ux-heuristics | Can anyone use it without thinking? | Extends docs/DESIGN.md |
-| 8 | cro-methodology | Why don't visitors convert, and what answers them? | Extends docs/WEBSITE.md, docs/EXPERIMENTS.md |
-| 9 | scorecard-marketing | How do we capture the not-ready-to-buy majority? | Extends docs/WEBSITE.md, docs/MARKETING.md |
-| 10 | steve-jobs-design-review | Is it insanely great, or not done? | Extends docs/WEBSITE.md — GATE |
+| 4 | web-typography | Is the type readable as well as dramatic? | Creates docs/DESIGN.md |
+| 5 | refactoring-ui | Is the design consistent and systematic? | Extends docs/DESIGN.md |
+| 6 | ux-heuristics | Can anyone use it without thinking? | Extends docs/DESIGN.md |
+| 7 | cro-methodology | Why don't visitors convert, and what answers them? | Extends docs/WEBSITE.md, docs/EXPERIMENTS.md |
+| 8 | steve-jobs-design-review | Is it insanely great, or not done? | Extends docs/WEBSITE.md — GATE |
 
 ## Operating Rules
 
@@ -46,14 +44,14 @@ A blank page becomes a live, high-converting website through ten phases run in o
 Ask these before creating the tracker:
 
 1. What is the product or service, and who is it for? (Gates Phase 1's niche and avatar, and every word of the message.)
-2. Do `docs/POSITIONING.md` or `docs/CUSTOMER.md` already exist from a create-business run? (If yes, lighten Phases 1-2 and reuse them; if positioning is thin, add the obviously-awesome optional phase.)
-3. What is the single primary conversion goal — start a trial, book a demo, purchase, or take a quiz? (Gates every CTA decision in Phases 1, 8, 9.)
-4. Full multi-page site or a single landing page? (Gates sitemap scope and whether Phases 8-9 apply.)
+2. Do `docs/POSITIONING.md` or `docs/CUSTOMER.md` already exist from prior positioning work? (If yes, lighten Phases 1-2 and reuse them; if positioning is thin, add the obviously-awesome optional phase.)
+3. What is the single primary conversion goal — start a trial, book a demo, purchase, or join a list? (Gates every CTA decision in Phases 1 and 7.)
+4. Full multi-page site or a single landing page? (Gates sitemap scope and whether Phase 7 applies.)
 5. What is the tech stack and where does the code live? (So design and copy land in real files, not a hand-off doc.)
-6. What proof assets exist today — testimonials, results, logos, guarantees? (Gates the Phase 8 persuasion audit and Rule 8.)
-7. How much does craft matter — competing on design, or a functional site? (Gates whether Phases 4-5 run fully or lightly.)
+6. What proof assets exist today — testimonials, results, logos, guarantees? (Gates the Phase 7 persuasion audit and Rule 8.)
+7. How much does craft matter — competing on design, or a functional site? (Gates whether Phases 4-6 run fully or lightly.)
 
-Skip heuristics: skip Phase 1 when a prior run already fixed the niche, avatar, and USP; run Phases 4-5 lightly for an internal or throwaway page where craft does not sell (never skip refactoring-ui); skip Phase 9 when one direct CTA suffices and there is no nurture motion; skip Phase 3 only under a brutal timeline — and warn that clear-but-forgettable copy evaporates. Then create the tracker from the template and confirm the plan.
+Skip heuristics: skip Phase 1 when a prior run already fixed the niche, avatar, and USP; run Phases 4-6 lightly for an internal or throwaway page where craft does not sell (never skip refactoring-ui); skip Phase 3 only under a brutal timeline — and warn that clear-but-forgettable copy evaporates. Then create the tracker from the template and confirm the plan.
 
 Done when `docs/CREATE-WEBSITE-PLAN.md` exists with every phase statused and the user has confirmed the plan.
 
@@ -101,35 +99,21 @@ Done when `docs/CREATE-WEBSITE-PLAN.md` exists with every phase statused and the
 
 **Done when:** every abstract benefit is a concrete outcome with a real, true number, one unexpected hook and one customer story exist, and the copy is signed off.
 
-### Phase 4 — Design the signature moment (top-design)
+### Phase 4 — Choose and tune the type (web-typography)
 
-**Purpose:** Make the page look agency-built, not template-built — starting from the one screenshot-worthy moment.
-
-**Brief (fallback):** Every pixel intentional. Start with the signature moment (usually the hero), not the header: dramatic scale (min 10:1 display-to-body), an asymmetric composition, a choreographed load with ~80ms staggered word reveals. Custom cubic-beziers (expo-out `0.16,1,0.3,1`), animate only `transform`/`opacity`, warm off-blacks (`#0a0a0a`) not pure black. Custom cursor only if the user opts in.
-
-**Invoke:** `top-design` with POSITIONING.md and the WEBSITE.md page briefs. Ask for the signature hero design, a custom color system (no AI purple-to-blue gradient), and a scored audit across typography, composition, motion, color, and details.
-
-**Decide with the user:** What is the signature moment worth screenshotting? Approve the color system. Custom cursor — yes, or native (recommend native unless craft is the product)?
-
-**Artifact:** Create docs/DESIGN.md with `## Design Direction` (signature moment, personality, references). Update the tracker.
-
-**Done when:** DESIGN.md names the signature moment and color system, the top-design audit scores are recorded, and the user approved the direction.
-
-### Phase 5 — Choose and tune the type (web-typography)
-
-**Purpose:** Make the type readable as well as dramatic — the discipline behind the drama.
+**Purpose:** Establish readable typography and open the design file — the discipline behind clear hierarchy on the page.
 
 **Brief (fallback):** Clear-goblet principle — type serves content. "Type for a moment" (headlines) versus "type to live with" (body). Three measures beat typeface choice: 16-18px body, 45-75ch measure (66 optimal, `max-width: 65ch`), line height 1.5-1.7 body / 1.1-1.25 headings. One to two families. Under 200KB payload, WOFF2, variable fonts, `clamp()` fluid scale, preload + `font-display: swap`.
 
-**Invoke:** `web-typography` with DESIGN.md `## Design Direction`. Ask for a display+body pairing, full CSS (clamp scale, per-context line heights, 65ch measure), and a font-loading plan under 200KB with zero layout shift.
+**Invoke:** `web-typography` with POSITIONING.md and WEBSITE.md page briefs. Ask for a display+body pairing, full CSS (clamp scale, per-context line heights, 65ch measure), and a font-loading plan under 200KB with zero layout shift.
 
 **Decide with the user:** Approve the pairing; confirm the performance budget (recommend a single variable font to cut the file count).
 
-**Artifact:** Extend docs/DESIGN.md `## Typography` (typefaces, scale, measure, line height, loading strategy). Update the tracker.
+**Artifact:** Create docs/DESIGN.md with `## Design Direction` (personality, references from the message) and `## Typography` (typefaces, scale, measure, line height, loading strategy). Update the tracker.
 
-**Done when:** DESIGN.md `## Typography` specifies the pairing, scale, measures, and a sub-200KB loading strategy, and the user approved the pairing.
+**Done when:** DESIGN.md exists with direction and typography, and the user approved the pairing.
 
-### Phase 6 — Make it systematic (refactoring-ui)
+### Phase 5 — Make it systematic (refactoring-ui)
 
 **Purpose:** Add the consistency that keeps the wow from collapsing on the second and third sections.
 
@@ -143,7 +127,7 @@ Done when `docs/CREATE-WEBSITE-PLAN.md` exists with every phase statused and the
 
 **Done when:** DESIGN.md defines the token scales and component decisions, buttons show one clear primary per section, and the user approved the tokens.
 
-### Phase 7 — Make it effortless to use (ux-heuristics)
+### Phase 6 — Make it effortless to use (ux-heuristics)
 
 **Purpose:** Remove the friction of making a visitor think.
 
@@ -157,7 +141,7 @@ Done when `docs/CREATE-WEBSITE-PLAN.md` exists with every phase statused and the
 
 **Done when:** every page passes the Trunk Test, catastrophic issues are fixed, UX Audit Findings are logged with severities, and the user approved the fix order.
 
-### Phase 8 — Engineer the conversion (cro-methodology)
+### Phase 7 — Engineer the conversion (cro-methodology)
 
 **Purpose:** Turn a clear, usable page into one that answers the real reasons visitors don't convert.
 
@@ -171,21 +155,7 @@ Done when `docs/CREATE-WEBSITE-PLAN.md` exists with every phase statused and the
 
 **Done when:** the Big-5 table has an evidence-backed counter and placement per objection, missing proof is listed as actions, test hypotheses are logged, and no counter relies on invented evidence.
 
-### Phase 9 — Add a lead-generating quiz (scorecard-marketing)
-
-**Purpose:** Capture the ~97% not ready to buy today with a lower-commitment offer.
-
-**Brief (fallback):** Everything is downstream from lead generation; a quiz converts 30-50% versus 3-10% for a static PDF. Four steps: a landing page (concept hook + the 3 Cs — Clarity, Credibility, Connection), a questionnaire that captures the email *before* the questions, a tiered results page, and a segmented follow-up. "Moving toward" hooks beat fear-based ones. Keep it to 8-15 questions for cold traffic.
-
-**Invoke:** `scorecard-marketing` with the primary goal and avatar. Ask for a concept hook and landing page, 10-12 scored questions in 3-4 categories, three result tiers with dynamic copy and a CTA each, and a follow-up sequence segmented by tier.
-
-**Decide with the user:** Does the site need a lead-nurture motion? If one direct CTA suffices, skip this phase. Otherwise approve the concept hook.
-
-**Artifact:** Extend docs/WEBSITE.md `## Lead Capture` (quiz funnel design). Extend docs/MARKETING.md `## Nurture Sequences` (tiered follow-up). Update the tracker.
-
-**Done when:** WEBSITE.md `## Lead Capture` specifies a hook, ≤15 questions with email captured first, and tiered results; MARKETING.md holds the segmented follow-up; the hook promises only what the assessment delivers.
-
-### Phase 10 — Hold it to an insanely-great bar (steve-jobs-design-review) — GATE
+### Phase 8 — Hold it to an insanely-great bar (steve-jobs-design-review) — GATE
 
 **Purpose:** Subject the finished site to one brutal, honest review before a single visitor sees it.
 
@@ -215,7 +185,7 @@ Optional phases follow the same operating rules; insert where the Add-when condi
 
 | Mistake | Fix |
 |---|---|
-| Designing before you have a message | Run Phase 2 (storybrand) and Phase 3 before Phase 4 (top-design); design serves the words, never the reverse. |
+| Designing before you have a message | Run Phase 2 (storybrand) and Phase 3 before Phase 4 (web-typography); design serves the words, never the reverse. |
 | Making your brand the hero | In storybrand, open with the customer's problem and desired outcome; if the first sentence starts with "We," rewrite it. |
 | Stacking competing calls to action | Keep one direct CTA and one transitional; refactoring-ui and the Jobs review both enforce one primary action per section. |
 | Confusing clear with sticky | Run the made-to-stick pass — concrete numbers, one unexpected hook, one customer story — so the message survives the closed tab. |
@@ -226,7 +196,7 @@ Optional phases follow the same operating rules; insert where the Add-when condi
 
 Exit checklist:
 - [ ] POSITIONING.md holds a BrandScript, a repeatable one-liner, and key messages consistent across surfaces
-- [ ] WEBSITE.md has a sitemap, page briefs with copy, an Objection/Counter table, and (if in scope) a lead-capture design
+- [ ] WEBSITE.md has a sitemap, page briefs with copy, and an Objection/Counter table
 - [ ] DESIGN.md defines direction, typography, tokens, components, and a passed UX audit
 - [ ] The Steve Jobs review returned INSANELY GREAT — not "pretty good" — and the cut list is applied
 - [ ] Every scarcity claim, testimonial, and guarantee on the page is true

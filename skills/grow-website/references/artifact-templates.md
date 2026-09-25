@@ -14,13 +14,10 @@ Intake answers, date started, project specifics.
 | Phase | Skill | Status | Artifact | Date |
 |---|---|---|---|---|
 | 1. Discover why visitors leave | cro-methodology | pending | WEBSITE.md, METRICS.md, EXPERIMENTS.md | |
-| 2. Capture the not-ready 97% | scorecard-marketing | pending | WEBSITE.md, MARKETING.md | |
-| 3. Clarify the message | storybrand-messaging | pending | POSITIONING.md | |
-| 4. Make the message stick | made-to-stick | pending | POSITIONING.md, WEBSITE.md | |
-| 5. Add proof and triggers | influence-psychology | pending | WEBSITE.md | |
-| 6. Rebuild the offer | hundred-million-offers | pending | OFFER.md, EXPERIMENTS.md | |
-| 7. Engineer shareability | contagious | pending | MARKETING.md, WEBSITE.md | |
-| 8. Connect the lifecycle | one-page-marketing | pending | MARKETING.md, METRICS.md | |
+| 2. Clarify the message | storybrand-messaging | pending | POSITIONING.md | |
+| 3. Make the message stick | made-to-stick | pending | POSITIONING.md, WEBSITE.md | |
+| 4. Add proof and triggers | influence-psychology | pending | WEBSITE.md | |
+| 5. Connect the lifecycle | one-page-marketing | pending | MARKETING.md, METRICS.md | |
 Statuses: pending · in-progress · awaiting-evidence · done · deferred: <reason> · skipped: <reason>
 
 ## Key Decisions

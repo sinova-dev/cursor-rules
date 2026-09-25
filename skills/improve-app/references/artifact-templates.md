@@ -1,7 +1,7 @@
 # improve-app artifact templates
 
 Skeletons this metaskill creates in the user's docs/ folder. This journey mostly *extends* files another
-journey created (CUSTOMER.md is created by create-app / create-business); for those, the section headings
+journey created (CUSTOMER.md is created by create-app); for those, the section headings
 named in each phase are the contract — read the file before writing, add or update your sections, and
 preserve everyone else's. The skeletons below are the files this journey most often creates from scratch
 when they are missing; copy them verbatim only then, since the headings are a cross-metaskill contract —
@@ -70,7 +70,7 @@ Spacing scale · color palette (shades, tinted grays) · shadows.
 
 ## docs/EXPERIMENTS.md
 
-Every test we run, with pre-committed criteria. Creates: create-business, create-app. Extends: improve-website, grow-website, grow-app, improve-app, create-website.
+Every test we run, with pre-committed criteria. Creates: create-app. Extends: improve-website, grow-website, grow-app, improve-app, create-website.
 
 ```markdown
 # Experiments
@@ -91,7 +91,7 @@ Every test we run, with pre-committed criteria. Creates: create-business, create
 
 ## docs/POSITIONING.md
 
-How the market should understand us — positioning canvas and messaging in one file. Creates: create-business, create-website. Extends: grow-website, grow-business, improve-website, improve-app.
+How the market should understand us — positioning canvas and messaging in one file. Creates: create-website. Extends: grow-website, improve-website, improve-app.
 
 ```markdown
 # Positioning & Messaging
@@ -119,7 +119,7 @@ Character · Problem (external/internal/philosophical) · Guide · Plan · Call 
 
 ## docs/PRODUCT.md
 
-What we build and why. Creates: create-app, create-business. Extends: grow-app, improve-app.
+What we build and why. Creates: create-app. Extends: grow-app, improve-app.
 
 ```markdown
 # Product

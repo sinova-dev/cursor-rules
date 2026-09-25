@@ -1,6 +1,6 @@
 ---
 name: create-app
-description: 'Guided journey from a raw app idea to a validated, cleanly architected first version that ships on a sustainable cadence. Orchestrates ten skills phase by phase - lean-startup, design-sprint, clean-architecture, domain-driven-design, clean-code, pragmatic-programmer, system-design, ios-hig-design, 37signals-way, software-design-philosophy - asking the user questions at every decision point and recording results in the project docs/ folder (PRODUCT.md, ARCHITECTURE.md, EXPERIMENTS.md, CREATE-APP-PLAN.md) so the journey resumes across sessions. Use when the user wants to build a new app, validate an idea before writing code, architect an MVP that will not need a rewrite, or says ''help me build my app the right way''. App already exists: use improve-app or grow-app. Business idea not yet validated: run create-business first. Marketing site only: use create-website. Architecture-only question: design-code-architecture. For one framework in isolation, invoke that skill directly.'
+description: 'Guided journey from a raw app idea to a validated, cleanly architected first version that ships on a sustainable cadence. Orchestrates nine skills phase by phase - lean-startup, design-sprint, clean-architecture, domain-driven-design, clean-code, pragmatic-programmer, system-design, 37signals-way, software-design-philosophy - asking the user questions at every decision point and recording results in the project docs/ folder (PRODUCT.md, ARCHITECTURE.md, EXPERIMENTS.md, CREATE-APP-PLAN.md) so the journey resumes across sessions. Use when the user wants to build a new app, validate an idea before writing code, architect an MVP that will not need a rewrite, or says ''help me build my app the right way''. App already exists: use improve-app or grow-app. Business idea not yet validated: run Phase 1 (lean-startup) before committing to build. Marketing site only: use create-website. Architecture-only question: design-code-architecture. For one framework in isolation, invoke that skill directly.'
 license: MIT
 metadata:
   author: wondelai
@@ -9,7 +9,7 @@ metadata:
 
 # Create an App
 
-Take a raw app idea to a validated, cleanly architected first version that ships on a sustainable cadence — without over-building for scale you have not earned, or writing a prototype that calcifies into a rewrite. This journey runs ten phases: it asks before every decision and records each choice in `docs/` so you can stop and resume across sessions. The early phases often produce no code at all; once an experiment greenlights building, the engineering phases build the real thing well.
+Take a raw app idea to a validated, cleanly architected first version that ships on a sustainable cadence — without over-building for scale you have not earned, or writing a prototype that calcifies into a rewrite. This journey runs nine phases: it asks before every decision and records each choice in `docs/` so you can stop and resume across sessions. The early phases often produce no code at all; once an experiment greenlights building, the engineering phases build the real thing well.
 
 ## Core Principle
 
@@ -28,9 +28,8 @@ This skill sequences the phases, asks the questions, and records the decisions; 
 | 5 | clean-code | Is each function readable and tested? | Creates docs/TESTING.md |
 | 6 | pragmatic-programmer | Which habits keep it healthy? | Extends docs/TESTING.md + docs/TECH-DEBT.md |
 | 7 | system-design | How big must it really be? | Extends docs/ARCHITECTURE.md |
-| 8 | ios-hig-design | Does it feel native on iOS? | Extends docs/DESIGN.md — iOS only |
-| 9 | 37signals-way | What ships, and what is cut? | Extends docs/PRODUCT.md + docs/STRATEGY.md |
-| 10 | software-design-philosophy | Where is complexity hiding? | Extends docs/TECH-DEBT.md + docs/ARCHITECTURE.md |
+| 8 | 37signals-way | What ships, and what is cut? | Extends docs/PRODUCT.md + docs/STRATEGY.md |
+| 9 | software-design-philosophy | Where is complexity hiding? | Extends docs/TECH-DEBT.md + docs/ARCHITECTURE.md |
 
 ## Operating Rules
 
@@ -41,7 +40,7 @@ This skill sequences the phases, asks the questions, and records the decisions; 
 5. **In-phase decisions.** Ask every question under "Decide with the user" — with concrete options and your recommendation. Record the choice in the tracker's Key Decisions. A decision made silently is a defect.
 6. **Phase exit.** Present the draft artifact content for sign-off before writing. On approval: write or extend the docs/ files, update the tracker (status, Key Decisions, Next Actions). Done when the files are written and the phase row shows `done`.
 7. **Artifact discipline.** Read before writing; create a file only if missing, otherwise extend — add or update your sections, preserve everyone else's. Files are UPPERCASE in `docs/`. Every recommendation lands as a checkbox or a table row with owner and priority. See [references/artifact-templates.md](references/artifact-templates.md) when creating a docs/ file for the first time — create it from the full skeleton (all section headings), then fill the sections your phase names.
-8. **The agent prepares and processes; only the human talks to customers and test users.** Draft sprint scripts and interview guides and score the results, then pause with status `awaiting-evidence` until the user returns with notes. The ios-hig-design phase applies only when shipping a native iOS app; skip it otherwise at intake.
+8. **The agent prepares and processes; only the human talks to customers and test users.** Draft sprint scripts and interview guides and score the results, then pause with status `awaiting-evidence` until the user returns with notes.
 
 ## Intake
 
@@ -50,14 +49,13 @@ Ask these before creating the tracker:
 1. What is the app idea in one sentence, and what is the riskiest belief behind it? (Gates Phase 1; if the job the app is hired for is fuzzy, add the jobs-to-be-done optional phase.)
 2. Is the underlying idea already validated with behavioral evidence, or still a hunch? (Unvalidated and high-stakes makes Phase 1 mandatory; if paying customers already exist you may be in the wrong journey — improve-app or grow-app.)
 3. What is the stage — weekend prototype, funded build toward launch, or a team forming around it? (A prototype leans on Phases 1-3 and 10; a forming team may add inspired-product.)
-4. Will you ship a native iOS client? (Yes keeps Phase 8; no skips it.)
-5. Do you have customers to talk to, or must you find them? (Gates the human evidence loop in Phases 1-2 and optional mom-test / continuous-discovery.)
-6. What load do you expect in the first months — daily active users and actions per day? (Feeds Phase 7 capacity math and stops premature scaling.)
-7. Solo build or team, and who owns shipping cadence? (Gates Phase 9 shaping.)
+4. Do you have customers to talk to, or must you find them? (Gates the human evidence loop in Phases 1-2 and optional mom-test / continuous-discovery.)
+5. What load do you expect in the first months — daily active users and actions per day? (Feeds Phase 7 capacity math and stops premature scaling.)
+6. Solo build or team, and who owns shipping cadence? (Gates Phase 8 shaping.)
 
-Phase-skip heuristics: skip Phase 2 when the core flow is already tested or trivial; skip Phase 8 unless shipping native iOS; skip Phase 7 only when load is obviously tiny — but still record the estimate; for a weekend prototype, run Phases 3-6 as one pass but never skip the Dependency Rule.
+Phase-skip heuristics: skip Phase 2 when the core flow is already tested or trivial; skip Phase 7 only when load is obviously tiny — but still record the estimate; for a weekend prototype, run Phases 3-6 as one pass but never skip the Dependency Rule.
 
-Then create `docs/CREATE-APP-PLAN.md` from the template with every phase statused, marking Phase 8 iOS-conditional. Done when `docs/CREATE-APP-PLAN.md` exists with every phase statused and the user has confirmed the plan.
+Then create `docs/CREATE-APP-PLAN.md` from the template with every phase statused. Done when `docs/CREATE-APP-PLAN.md` exists with every phase statused and the user has confirmed the plan.
 
 ## Phases
 
@@ -159,21 +157,7 @@ Then create `docs/CREATE-APP-PLAN.md` from the template with every phase statuse
 
 **Done when:** the capacity estimate is recorded, the deferred scaling techniques are listed explicitly, and any cache or queue is justified by a number.
 
-### Phase 8 — Make it feel native (ios-hig-design) — iOS only
-
-**Purpose:** Make an iPhone client feel native — the basis of iOS users' trust. Run only when shipping a native iOS client (decided at intake); skip otherwise.
-
-**Brief (fallback):** Three pillars — clarity, deference, depth. Respect safe areas (Dynamic Island, home indicator); every touch target at least 44x44 pt; semantic colors (Color(.label), Color(.systemBackground)) so Dark Mode is automatic; semantic text styles for Dynamic Type; native navigation — tab bars for primary destinations, NavigationStack for drill-down, sheets for focused tasks, never a hamburger menu. Accessibility is first-class: a label on every control, and VoiceOver can complete every task.
-
-**Invoke:** `ios-hig-design` with the app's key screens. Ask for a HIG review of safe areas, 44pt targets, semantic colors and type, native navigation, and accessibility labels.
-
-**Decide with the user:** Which screens are in scope for the first review? Any deliberate platform deviations, and are they justified?
-
-**Artifact:** Extend docs/DESIGN.md: add `## Components` (component | decision | status) and `## UX Audit Findings` (issue | heuristic | severity 0-4 | fix | status). Update the tracker.
-
-**Done when:** each in-scope screen is reviewed, findings are logged with severity, and accessibility gaps are captured as fixes.
-
-### Phase 9 — Ship on a cadence (37signals-way)
+### Phase 8 — Ship on a cadence (37signals-way)
 
 **Purpose:** Ship a focused v1 on fixed time that fights feature creep.
 
@@ -187,7 +171,7 @@ Then create `docs/CREATE-APP-PLAN.md` from the template with every phase statuse
 
 **Done when:** the next feature has a shaped pitch with an appetite, the v1 cut list is in STRATEGY.md's No-List, and the roadmap reflects fixed-time / flexible-scope.
 
-### Phase 10 — Treat complexity as the enemy (software-design-philosophy)
+### Phase 9 — Treat complexity as the enemy (software-design-philosophy)
 
 **Purpose:** Hold complexity down across every module — the lens over all the other phases.
 
@@ -238,5 +222,5 @@ Exit checklist:
 
 Close the tracker: every phase `done` or `skipped: reason`, Key Decisions captured, and Next Actions carried into the artifacts (not left in the tracker). Forward routing:
 
-- When the idea underneath the app turns out to be unvalidated, or is really a commercial-model question, continue with `create-business`.
+- When the idea underneath the app turns out to be unvalidated, loop back to Phase 1 (lean-startup) or add the optional mom-test / jobs-to-be-done phases before building further.
 - When the app grows past its first architecture and the structure itself becomes the hard problem, continue with `design-code-architecture`.

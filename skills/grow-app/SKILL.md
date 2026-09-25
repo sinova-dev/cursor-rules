@@ -1,6 +1,6 @@
 ---
 name: grow-app
-description: 'Guided journey from an app people sign up for and then quietly abandon to a sealed retention engine with a habit loop, an activated first run, and one metric the whole team trusts. Orchestrates eight skills phase by phase - hooked-ux, improve-retention, continuous-discovery, lean-ux, inspired-product, lean-analytics, microinteractions, drive-motivation - asking the user questions at every decision point and recording results in the project docs/ folder (PRODUCT.md, METRICS.md, GROW-APP-PLAN.md) so the journey resumes across sessions. Use when the user wants to lift activation and retention, design a habit loop, fix a leaky onboarding funnel, or says ''users sign up then disappear''. Do not use to fix broken UX or performance that no engagement mechanic can paper over - run improve-app first; if there is no app yet, use create-app. For one framework in isolation, invoke that skill directly.'
+description: 'Guided journey from an app people sign up for and then quietly abandon to a sealed retention engine with a habit loop, an activated first run, and one metric the whole team trusts. Orchestrates seven skills phase by phase - hooked-ux, improve-retention, continuous-discovery, lean-ux, inspired-product, lean-analytics, microinteractions - asking the user questions at every decision point and recording results in the project docs/ folder (PRODUCT.md, METRICS.md, GROW-APP-PLAN.md) so the journey resumes across sessions. Use when the user wants to lift activation and retention, design a habit loop, fix a leaky onboarding funnel, or says ''users sign up then disappear''. Do not use to fix broken UX or performance that no engagement mechanic can paper over - run improve-app first; if there is no app yet, use create-app. For one framework in isolation, invoke that skill directly.'
 license: MIT
 metadata:
   author: wondelai
@@ -9,11 +9,11 @@ metadata:
 
 # Grow an App
 
-Your app has users who sign up and then quietly disappear — cohorts decay, daily actives are flat, the activation funnel leaks where it always has, and nothing looks obviously broken. This journey seals the bucket: it turns first-time users into activated, then habitual, then would-miss-it users across eight interactive phases. The agent asks before every decision and records the outcome in `docs/`, so the work resumes across sessions instead of restarting. Growth here is an engineering and design problem, not a bigger ad budget.
+Your app has users who sign up and then quietly disappear — cohorts decay, daily actives are flat, the activation funnel leaks where it always has, and nothing looks obviously broken. This journey seals the bucket: it turns first-time users into activated, then habitual, then would-miss-it users across seven interactive phases. The agent asks before every decision and records the outcome in `docs/`, so the work resumes across sessions instead of restarting. Growth here is an engineering and design problem, not a bigger ad budget.
 
 ## Core Principle
 
-**Fix the leaky bucket before pouring in acquisition: habit, activation, and retention come before any growth spend.** This skill sequences the eight phases, asks every decision question, and records each choice in `docs/`. The constituent skills carry the method — invoke them rather than improvising their frameworks.
+**Fix the leaky bucket before pouring in acquisition: habit, activation, and retention come before any growth spend.** This skill sequences the seven phases, asks every decision question, and records each choice in `docs/`. The constituent skills carry the method — invoke them rather than improvising their frameworks.
 
 ## Journey Map
 
@@ -26,9 +26,8 @@ Your app has users who sign up and then quietly disappear — cohorts decay, dai
 | 5 | inspired-product | Is the team building the right things? | Extends docs/PRODUCT.md |
 | 6 | lean-analytics | Which single number tells the truth? | Creates docs/METRICS.md — sets the Rule 8 bar |
 | 7 | microinteractions | Does it feel alive in the hand? | Extends docs/DESIGN.md |
-| 8 | drive-motivation | Will engagement last, or curdle? | Extends docs/PRODUCT.md |
 
-Phases 1-2 seal the loop and the funnel; 3-5 steer with evidence; 6 is the instrument panel; 7-8 are the finish and the ethical backstop. Take the lean-analytics baseline (Phase 6) early — before the Phase 1-2 fixes land — so every change is read against a pre-change number, then keep updating it. Habit formation is slow: read Phase 1's success against the "5% rule" (a habit has formed when 5%+ of users return unprompted), not a single cohort.
+Phases 1-2 seal the loop and the funnel; 3-5 steer with evidence; 6 is the instrument panel; 7 is the finish. Take the lean-analytics baseline (Phase 6) early — before the Phase 1-2 fixes land — so every change is read against a pre-change number, then keep updating it. Habit formation is slow: read Phase 1's success against the "5% rule" (a habit has formed when 5%+ of users return unprompted), not a single cohort.
 
 ## Operating Rules
 
@@ -39,7 +38,7 @@ Phases 1-2 seal the loop and the funnel; 3-5 steer with evidence; 6 is the instr
 5. **In-phase decisions.** Ask every question under "Decide with the user" — with concrete options and your recommendation. Record the choice in the tracker's Key Decisions. A decision made silently is a defect.
 6. **Phase exit.** Present the draft artifact content for sign-off before writing. On approval: write or extend the docs/ files, update the tracker (status, Key Decisions, Next Actions). Done when the files are written and the phase row shows `done`.
 7. **Artifact discipline.** Read before writing; create a file only if missing, otherwise extend — add or update your sections, preserve everyone else's. Files are UPPERCASE in `docs/`. Every recommendation lands as a checkbox or a table row with owner and priority. See [references/artifact-templates.md](references/artifact-templates.md) when creating a docs/ file for the first time — create it from the full skeleton (all section headings), then fill the sections your phase names.
-8. **Retention before acquisition.** Acquisition-oriented phases — the optional cold-start-problem, contagious, and crossing-the-chasm, plus any paid-growth work — stay locked while activation and retention sit below the bar set at intake; unlock them only once the cohort curve clears that bar. Every habit loop and reward must pass the Manipulation Matrix: build only what the maker would use and honestly believes materially improves users. When a tactic needs manufactured anxiety or loss aversion, replace it with one built on real value.
+8. **Retention before acquisition.** Optional paid-growth or acquisition work stays locked while activation and retention sit below the bar set at intake; unlock it only once the cohort curve clears that bar. Every habit loop and reward must pass the Manipulation Matrix: build only what the maker would use and honestly believes materially improves users. When a tactic needs manufactured anxiety or loss aversion, replace it with one built on real value.
 
 ## Intake
 
@@ -49,7 +48,7 @@ Run only on first start (no tracker). Ask:
 2. What are the current retention numbers — day-1/7/30 or week-4 cohorts? (sets the Rule 8 acquisition bar; feeds lean-analytics)
 3. Where does the activation funnel leak, and what is the first-run flow? (gates improve-retention)
 4. Solo/small team or a full product trio (PM, designer, engineer)? (scales continuous-discovery and inspired-product)
-5. Is the app a network/marketplace product, and do engaged users fail to convert to revenue? (flags optional cold-start-problem / monetizing-innovation)
+5. Is the app a network/marketplace product, and do engaged users fail to convert to revenue? (flags optional monetizing-innovation)
 6. What analytics and instrumentation exist today? (gates lean-analytics and every experiment)
 7. Is retention broken by UX or performance rather than missing engagement? (if yes, route to improve-app first)
 
@@ -179,34 +178,14 @@ Done when `docs/GROW-APP-PLAN.md` exists with every phase statused and the user 
 
 **Done when:** the five interactions are in the inventory with their missing states and fixes, the signature moment is chosen, and each fix has a status.
 
-### Phase 8 — Sustain engagement with intrinsic motivation (drive-motivation)
-
-**Purpose:** Keep the loops from curdling — engagement that runs on Autonomy, Mastery, and Purpose instead of exploitation.
-
-**Brief (fallback):** For any task needing cognitive effort, "if-then" rewards crush intrinsic motivation. Lasting engagement is Autonomy (choice over what/when/how/with whom), Mastery (visible progress, flow-calibrated challenge), and Purpose (why it matters). Autonomy killers: forced tutorials, unskippable steps, mandatory notifications. Reserve rewards for meaningful milestones; prefer "now-that" recognition over "if-then" bargains.
-
-**Invoke:** `drive-motivation` with the app's gamification, streaks, points, and notification patterns. Ask for an AMP audit rated 0-10, every autonomy violation flagged, the point at which streaks tipped into loss aversion, and a progression redesign around real mastery and purpose.
-
-**Decide with the user:**
-- Which autonomy violations to remove (forced/unskippable steps).
-- Which "if-then" rewards convert to "now-that" recognition.
-- Whether any streak/points mechanic exploits loss aversion and must change.
-
-**Artifact:** Extend docs/PRODUCT.md `## Activation & Retention Plan` with AMP-audit rows (violation/finding | fix | owner | status). Update the tracker.
-
-**Done when:** the AMP score and every autonomy violation are recorded, the reward/streak fixes are rows with owners, and the loops pass the Manipulation Matrix from Rule 8.
-
 ## Optional Phases
 
 | Skill | Add when | Artifact |
 |---|---|---|
-| cold-start-problem | the app is a network or marketplace product | Extends docs/PRODUCT.md |
 | monetizing-innovation | engaged users do not translate into revenue | Extends docs/OFFER.md |
-| contagious | users love the app but never mention it | Extends docs/MARKETING.md |
-| crossing-the-chasm | growth stalls at the early-adopter boundary | Extends docs/STRATEGY.md |
 | jobs-to-be-done | usage patterns say the app is hired for a different job | Extends docs/CUSTOMER.md |
 
-Optional phases follow the same operating rules; insert where the Add-when condition first becomes true. The acquisition-leaning ones — cold-start-problem, contagious, crossing-the-chasm — stay locked behind Rule 8 until retention clears the bar.
+Optional phases follow the same operating rules; insert where the Add-when condition first becomes true. Acquisition-oriented optional work stays locked behind Rule 8 until retention clears the bar.
 
 ## Common Mistakes
 
@@ -217,11 +196,11 @@ Optional phases follow the same operating rules; insert where the Add-when condi
 | Optimizing the wrong Ability-Chain link | Rate all six factors in improve-retention and fix the scarcest resource, not the most obvious one. |
 | Jumping from outcome straight to solution | Build the Opportunity Solution Tree in continuous-discovery first; the obvious feature is often the worst of five. |
 | Measuring outputs, not outcomes | Instrument every release; in lean-ux and inspired-product, success is a change in user behavior, not stories shipped. |
-| Gamifying with points for everything | Reserve rewards for meaningful milestones and run the drive-motivation AMP audit; "if-then" rewards crowd out your power users. |
+| Gamifying with points for everything | Reserve rewards for meaningful milestones; run the hooked-ux Manipulation Matrix and avoid "if-then" bargains that crowd out power users. |
 
 ## Completing the Journey
 
-- [ ] PRODUCT.md holds a Hook loop with the weakest phase fixed, an activation Starter Step, a living Opportunity Solution Tree, and an AMP-clean engagement design.
+- [ ] PRODUCT.md holds a Hook loop with the weakest phase fixed, an activation Starter Step, a living Opportunity Solution Tree, and engagement design that passes the Manipulation Matrix.
 - [ ] METRICS.md names the Stickiness-stage OMTM plus a counter-metric with a line in the sand (target, date, miss response).
 - [ ] At least one lean-ux experiment has resolved with a recorded verdict, and invalidated ideas are out of the backlog.
 - [ ] The retention bar set at intake is met — or the remaining gap is quantified — before any acquisition phase runs.
@@ -229,4 +208,3 @@ Optional phases follow the same operating rules; insert where the Add-when condi
 Close the tracker: every phase `done` or `skipped`, with Next Actions carried into PRODUCT.md, METRICS.md, and EXPERIMENTS.md. Then route forward:
 
 - When engagement mechanics cannot fix a product held back by broken UX or performance, continue with `improve-app`.
-- When the app is sticking and the business around it must keep pace — revenue, channels, operations — continue with `grow-business`.
